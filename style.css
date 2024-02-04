@@ -5,7 +5,6 @@
 
 body {
   background-color: var(--bg-color);
-  overflow: hidden;
 }
 .container {
   display: flex;
