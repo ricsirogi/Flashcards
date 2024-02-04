@@ -18,3 +18,14 @@ let deck = []
 let leanedDeck = []
 let notLearnedDeck = []
 let currentCard = null
+
+let loadedCardsRaw = ''
+fetch('cards/test.txt')
+  .then((response) => response.text())
+  .then((data) => {
+    // Here's where you handle the response text
+    console.log(data)
+  })
+  .catch((error) => {
+    console.error('Error:', error)
+  })

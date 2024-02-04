@@ -1,7 +1,6 @@
 :root {
   --bg-color: rgb(1, 4, 90);
   --element-bg-color: rgb(0, 5, 162);
-  --font-size: 50px;
 }
 
 body {
@@ -14,19 +13,35 @@ body {
   justify-content: center;
   height: 100vh;
   background: var(--bg-color);
-  font-size: var(--font-size);
 }
-
+#card-div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 25%;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+#actions-div {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
 button {
   background: var(--element-bg-color);
-  font-size: var(--font-size);
+  font-size: 50px;
+  font-family: Consolas;
   color: white;
-  margin-top: 20px;
   padding: 10px 20px;
   border-radius: 10px;
 }
 
+.action-button {
+  margin-top: 50px;
+}
+
 #card-button {
-  width: 800px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
 }
