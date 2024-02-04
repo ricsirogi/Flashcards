@@ -16,14 +16,30 @@ class Card {
 
 let params = new URLSearchParams(window.location.search)
 let deckName = params.get('deck')
-
+console.log('gamedeck:', deckName)
 let deck = []
 let learnedDeck = []
 let notLearnedDeck = []
 let currentCard = null
-let lastPress = '' // keeps track if the last button press was 'know' or 'not-know'
+let lastPress = [] // keeps track if the button presses (a stack of strings 'know' or 'not-know')
 
-let loadedCardsRaw = ''
+function hungarizeWord(word) {
+  // for a while when I was writing the words file, I didn't know why python was displaying the hungarian characters wrong
+  // so I used these to replace the characters with the correct ones
+  // now I don't need them, but I'll keep them here for a while
+  word = word.replace(/o:(?!:)/g, 'ö')
+  word = word.replace(/u:(?!:)/g, 'ü')
+  word = word.replace(/o'(?!')/g, 'ó')
+  word = word.replace(/o"(?!")/g, 'ő')
+  word = word.replace(/u'(?!')/g, 'ú')
+  word = word.replace(/u"(?!")/g, 'ű')
+  word = word.replace(/e'(?!')/g, 'é')
+  word = word.replace(/a'(?!')/g, 'á')
+  word = word.replace(/i'(?!')/g, 'í')
+
+  return word
+}
+
 async function loadData() {
   try {
     let response = await fetch('https://raw.githubusercontent.com/ricsirogi/Flashcards/main/cards/' + deckName + '.txt')
@@ -37,7 +53,8 @@ async function loadData() {
     }
     allCards = []
     for (let i = 0; i < data.length; i = i + 2) {
-      allCards.push(new Card(data[i], data[i + 1], 'hu'))
+      hu_word = hungarizeWord(data[i])
+      allCards.push(new Card(hu_word, data[i + 1], 'hu'))
     }
 
     // shuffle the cards and put them into the deck
@@ -64,10 +81,10 @@ function nextCard(knowornot) {
   }
   if (knowornot === 'know') {
     learnedDeck.push(currentCard)
-    lastPress = 'know'
+    lastPress.push('know')
   } else if (knowornot === 'not-know') {
     notLearnedDeck.push(currentCard)
-    lastPress = 'not-know'
+    lastPress.push('not-know')
   }
   if (deck.length > 0) {
     currentCard = deck.pop()
@@ -101,11 +118,13 @@ undoButton.addEventListener('click', () => {
   if (!currentCard) {
     return
   }
-  if (lastPress === 'know' && learnedDeck.length > 0) {
+  if (lastPress[lastPress.length - 1] === 'know' && learnedDeck.length > 0) {
     deck.push(currentCard)
+    lastPress.pop()
     currentCard = learnedDeck.pop()
-  } else if (lastPress === 'not-know' && notLearnedDeck.length > 0) {
+  } else if (lastPress[lastPress.length - 1] === 'not-know' && notLearnedDeck.length > 0) {
     deck.push(currentCard)
+    lastPress.pop()
     currentCard = notLearnedDeck.pop()
   } else {
     return
