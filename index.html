@@ -3,20 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flashcards</title>
+    <title>Flashcards menu</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      body {
+        overflow: scroll;
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
-      <div id="card-div">
-        <button id="card-button">LoremIpsumLoremIpsum</button>
-      </div>
-      <div id="actions-div">
-        <button class="action-button">Undo</button>
-        <button class="action-button">Know</button>
-        <button class="action-button">Not Know</button>
-      </div>
-    </div>
-    <script src="script.js"></script>
+    <div class="container" id="menu-container"></div>
+    <script src="menu.js"></script>
   </body>
 </html>
