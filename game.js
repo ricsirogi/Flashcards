@@ -16,7 +16,7 @@ class Card {
 
 let params = new URLSearchParams(window.location.search)
 let deckName = params.get('deck')
-console.log('gamedeck:', deckName)
+
 let deck = []
 let learnedDeck = []
 let notLearnedDeck = []
@@ -39,7 +39,16 @@ function hungarizeWord(word) {
 
   return word
 }
-
+function shuffleCards(baseDeck) {
+  newDeck = []
+  var len = baseDeck.length
+  for (let i = 0; i < len; i++) {
+    let randomIndex = Math.floor(Math.random() * baseDeck.length)
+    newDeck.push(baseDeck[randomIndex])
+    baseDeck.splice(randomIndex, 1)
+  }
+  return newDeck
+}
 async function loadData() {
   try {
     let response = await fetch('https://raw.githubusercontent.com/ricsirogi/Flashcards/main/cards/' + deckName + '.txt')
@@ -58,12 +67,9 @@ async function loadData() {
     }
 
     // shuffle the cards and put them into the deck
-    var len = allCards.length
-    for (let i = 0; i < len; i++) {
-      let randomIndex = Math.floor(Math.random() * allCards.length)
-      deck.push(allCards[randomIndex])
-      allCards.splice(randomIndex, 1)
-    }
+    shuffleCards(allCards).forEach((element) => {
+      deck.push(element)
+    })
   } catch (error) {
     console.error('Error:', error)
   }
@@ -89,8 +95,11 @@ function nextCard(knowornot) {
   if (deck.length > 0) {
     currentCard = deck.pop()
   } else {
-    currentCard = null
-    return
+    // if the deck is empty, then the game is over, start over with the not learned cards
+    deck = shuffleCards(notLearnedDeck)
+    notLearnedDeck = []
+    learnedDeck = []
+    currentCard = deck.pop()
   }
   cardButton.innerHTML = currentCard.hu
   console.log('\n', deck)
