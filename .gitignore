@@ -1,0 +1,17 @@
+# .gitignore
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore files related to your IDE/editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore dist directory
+dist/

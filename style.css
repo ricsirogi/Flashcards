@@ -1,0 +1,32 @@
+:root {
+  --bg-color: rgb(1, 4, 90);
+  --element-bg-color: rgb(0, 5, 162);
+  --font-size: 50px;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: var(--bg-color);
+  font-size: var(--font-size);
+}
+
+button {
+  background: var(--element-bg-color);
+  font-size: var(--font-size);
+  color: white;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+#card-button {
+  width: 800px;
+  height: 200px;
+}

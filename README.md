@@ -1,2 +1,3 @@
 # Flashcards
- Flashcards to help with studying new words or definitions
+
+Flashcards to help with studying new words
