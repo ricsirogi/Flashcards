@@ -1,38 +1,38 @@
-híradó
+hÃ­radÃ³
 il telegiornale
-amimációs
+amimÃ¡ciÃ³s
 il cartone animato
 dokumentum
 il documentario
-idõjárásjelentés
+idÅ‘jÃ¡rÃ¡sjelentÃ©s
 la previsione del tempo
 sorozat
 la serie/ le serie
 reality show(?)
 la reality
-reklám
-la publicittá
-kerekasztal beszélgetés
+reklÃ¡m
+la publicittÃ¡
+kerekasztal beszÃ©lgetÃ©s
 la tavola rotonda
-sportadás
+sportadÃ¡s
 la trasmissione sportiva
-kvíz/játék
+kvÃ­z/jÃ¡tÃ©k
 il quiz/il gioco
-távirányító
+tÃ¡virÃ¡nyÃ­tÃ³
 il telecomando
-rész
+rÃ©sz
 la puntata
-szórakoztató
+szÃ³rakoztatÃ³
 intrattenimento
-nézõk
+nÃ©zÅ‘k
 spettatori
-adásba kerülni
+adÃ¡sba kerÃ¼lni
 andare in onda
-elõfizetés
+elÅ‘fizetÃ©s
 l'abbonamento
-fikció (?)
+fikciÃ³ (?)
 fiction
-mûsorvezetõ
+mÅ±sorvezetÅ‘
 conduttore
 kikapcsolt TV
 televisore
@@ -40,65 +40,65 @@ bekapcsolt TV
 televisione
 bekapcsolni
 accendere
-kapcsolgatni a csatornákat
+kapcsolgatni a csatornÃ¡kat
 fare zapping
 kikapcsolni
 spengere
-néha
+nÃ©ha
 a volte
-vitamûsor
+vitamÅ±sor
 dibattico
-természetfilm
+termÃ©szetfilm
 documentario naturalistico
-szendvedélyesen szeret valamit
+szendvedÃ©lyesen szeret valamit
 essere appossionato/a di qc
-esemény
+esemÃ©ny
 evento
 sci-fi
 fantascientifico/a
 krimi
 film giallo
-rendõrös, krimi
+rendÅ‘rÃ¶s, krimi
 polizesco/a
-mûsor
+mÅ±sor
 programma
-sporthírek
+sporthÃ­rek
 telegiornale (m) sportivo
 valaminek bizonyul
 verificarsi
-bosszant, idegesít valakit
+bosszant, idegesÃ­t valakit
 dare fastidio a qualcuno
-népszerû
+nÃ©pszerÅ±
 popolare
 elvisel
 sopportare
-tehetségkutató show
+tehetsÃ©gkutatÃ³ show
 talent show (m)
 telekereskedelem
 televendita
 parabola antenna
 antenna parabolica
-lehetõsége van arra, hogy...
-avere la possibilitá di + inf.
+lehetÅ‘sÃ©ge van arra, hogy...
+avere la possibilitÃ¡ di + inf.
 csatorna
 canale (m)
 csomag
 pacchetto
 tematikus
 tematico/a
-televíziós
+televÃ­ziÃ³s
 televisivo/a
 internet
 rete
-kölcsönkérni valamit
+kÃ¶lcsÃ¶nkÃ©rni valamit
 chiedere qualcosa in prestito
-kifejezni egy véleményt
+kifejezni egy vÃ©lemÃ©nyt
 esprimere un parere
 kifejezni
 esprimere
-vélemény
+vÃ©lemÃ©ny
 parere
-nekem az tûnik valahogy
+nekem az tÅ±nik valahogy
 mi pare qualcosa
-segíteni (kifejezés)
+segÃ­teni (kifejezÃ©s)
 dare una mano
