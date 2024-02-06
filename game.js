@@ -3,14 +3,19 @@ class Card {
     this.hu = hu // the hungarian word
     this.en = en // the othe language translation of the word, en means english
     this.side = side // indicates which side of the card is visible, can be either 'hu' or 'en'
+    this.defaultSide = side // the side the card will be on when it's put back into the deck
   }
 
-  get_word() {
+  getWord() {
     return this.side === 'hu' ? this.hu : this.en
   }
 
   flip() {
     this.side = this.side === 'hu' ? 'en' : 'hu'
+  }
+
+  default() {
+    this.side = this.defaultSide
   }
 }
 
@@ -91,7 +96,10 @@ function nextCard(knowornot) {
   } else if (knowornot === 'not-know') {
     notLearnedDeck.push(currentCard)
     lastPress.push('not-know')
+  } else {
+    console.error('Invalid argument in nextCard()')
   }
+  currentCard.default() // flip the card to it's default side, so if user undoes the action, or gets the card again, it will be on the default side
   if (deck.length > 0) {
     currentCard = deck.pop()
   } else {
@@ -101,10 +109,7 @@ function nextCard(knowornot) {
     learnedDeck = []
     currentCard = deck.pop()
   }
-  cardButton.innerHTML = currentCard.hu
-  console.log('\n', deck)
-  console.log(learnedDeck)
-  console.log(notLearnedDeck)
+  cardButton.innerHTML = currentCard.getWord()
 }
 
 let cardButton = document.getElementById('card-button')
@@ -112,18 +117,14 @@ let knowButton = document.getElementById('know-button')
 let notKnowButton = document.getElementById('not-know-button')
 let undoButton = document.getElementById('undo-button')
 cardButton.addEventListener('click', () => {
-  if (currentCard.side === 'hu') {
-    cardButton.innerHTML = currentCard.en
-  } else {
-    cardButton.innerHTML = currentCard.hu
-  }
   currentCard.flip()
+  cardButton.innerHTML = currentCard.getWord()
 })
 
 knowButton.addEventListener('click', () => nextCard('know'))
 notKnowButton.addEventListener('click', () => nextCard('not-know'))
 undoButton.addEventListener('click', () => {
-  // only add currentCard back into the deck, if it's not null, and the deck it would pull back from isn't empty
+  // only add currentCard back into the deck, if it's not null, and the deck it would pull back from is not empty
   if (!currentCard) {
     return
   }
@@ -138,8 +139,5 @@ undoButton.addEventListener('click', () => {
   } else {
     return
   }
-  console.log('\n', deck)
-  console.log(learnedDeck)
-  console.log(notLearnedDeck)
   cardButton.innerHTML = currentCard.hu
 })
