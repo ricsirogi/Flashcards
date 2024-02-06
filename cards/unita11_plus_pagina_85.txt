@@ -30,8 +30,8 @@ rajongója valaminek, lelkes
 appossionata di
 javaslat
 suggerimento
-rendezvény (névelő?)
-la manifestazione (névelő?)
+rendezvény
+la manifestazione
 szerepelni fellépni
 esibirsi
 megvalósítható
@@ -123,7 +123,7 @@ celebre
 véletlenül
 casualmente
 mese
-favole
+favola
 A helyedben...
 Al tuo posto
 Jól tennéd, ha...
@@ -152,8 +152,6 @@ helyes, pontosan
 giusto
 Dehogy!
 Macché
-kapcsolat
-la connessione
 Erre nem gondoltam!
 Non ci ho pensato!
 mindenesetre
