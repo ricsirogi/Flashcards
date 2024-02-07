@@ -6,11 +6,13 @@ class Card {
     this.defaultSide = side // the side the card will be on when it's put back into the deck
   }
 
-  getWord() {
-    return this.side === 'hu' ? this.hu : this.en
+  getWords() {
+    // returns the words in an array, the first element is the word on the current side, the second is the word on the other side
+    return this.side === 'hu' ? [this.hu, this.en] : [this.en, this.hu]
   }
 
   flip() {
+    // This is till needed because we still need to know which side the card is on
     this.side = this.side === 'hu' ? 'en' : 'hu'
   }
 
@@ -22,11 +24,33 @@ class Card {
 let params = new URLSearchParams(window.location.search)
 let deckName = params.get('deck')
 
+let cardButton = document.getElementById('card-button')
+let cardFront = cardButton.getElementsByClassName('front')[0]
+let cardBack = cardButton.getElementsByClassName('back')[0]
+let knowButton = document.getElementById('know-button')
+let notKnowButton = document.getElementById('not-know-button')
+let undoButton = document.getElementById('undo-button')
+let backButton = document.getElementById('back-button')
+
 let deck = []
 let learnedDeck = []
 let notLearnedDeck = []
 let currentCard = null
 let lastPress = [] // keeps track if the button presses (a stack of strings 'know' or 'not-know')
+let totalDeckLength = 0
+let progressIndicator = document.getElementById('progress-indicator')
+
+function changeCardText(texts) {
+  cardFront.innerHTML = texts[0]
+  cardBack.innerHTML = texts[1]
+  console.log(texts, cardFront)
+}
+
+function confirmExit(e) {
+  e.preventDefault()
+  e.returnValue = ''
+}
+window.addEventListener('beforeunload', confirmExit)
 
 function hungarizeWord(word) {
   // for a while when I was writing the words file, I didn't know why python was displaying the hungarian characters wrong
@@ -44,6 +68,7 @@ function hungarizeWord(word) {
 
   return word
 }
+
 function shuffleCards(baseDeck) {
   newDeck = []
   var len = baseDeck.length
@@ -54,6 +79,11 @@ function shuffleCards(baseDeck) {
   }
   return newDeck
 }
+
+function uppercaseFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1)
+}
+
 async function loadData() {
   try {
     let response = await fetch('https://raw.githubusercontent.com/ricsirogi/Flashcards/main/cards/' + deckName + '.txt')
@@ -65,11 +95,16 @@ async function loadData() {
       console.error('The number of lines in the file is not even.' + '\n' + data)
       return
     }
+
     allCards = []
     for (let i = 0; i < data.length; i = i + 2) {
-      hu_word = hungarizeWord(data[i])
-      allCards.push(new Card(hu_word, data[i + 1], 'hu'))
+      huWord = uppercaseFirstLetter(hungarizeWord(data[i]))
+      enWord = uppercaseFirstLetter(data[i + 1])
+      allCards.push(new Card(huWord, enWord, 'hu'))
     }
+
+    console.log('Initial length of the deck: ' + allCards.length)
+    totalDeckLength = allCards.length
 
     // shuffle the cards and put them into the deck
     shuffleCards(allCards).forEach((element) => {
@@ -81,14 +116,27 @@ async function loadData() {
 }
 
 loadData().then(() => {
+  totalDeckLength = deck.length
   currentCard = deck.pop()
-  cardButton.innerHTML = currentCard.hu
+  changeCardText(currentCard.getWords())
+  updateProgress()
 })
 
+function updateProgress() {
+  // call this after taking the new card out of the deck (I think it makes more sense to call it after)
+  progressIndicator.innerHTML = 'Progress: ' + (deck.length + 1) + '/' + totalDeckLength
+  console.log('deck length: ' + (deck.length + 1) + '/' + totalDeckLength)
+}
+
 //* ACTION BUTTONS
+//knowornot is a string, either 'know' or 'not-know' depending on which button was pressed
 function nextCard(knowornot) {
   if (currentCard === null) {
     return
+  }
+  if (currentCard.side === 'en') {
+    currentCard.flip()
+    cardButton.classList.toggle('flipped')
   }
   if (knowornot === 'know') {
     learnedDeck.push(currentCard)
@@ -102,27 +150,31 @@ function nextCard(knowornot) {
   currentCard.default() // flip the card to it's default side, so if user undoes the action, or gets the card again, it will be on the default side
   if (deck.length > 0) {
     currentCard = deck.pop()
-  } else {
+  } else if (notLearnedDeck.length > 0) {
     // if the deck is empty, then the game is over, start over with the not learned cards
     deck = shuffleCards(notLearnedDeck)
+    totalDeckLength = deck.length
     notLearnedDeck = []
     learnedDeck = []
     currentCard = deck.pop()
+  } else {
+    progressIndicator.innerHTML = 'Game over! Refresh the page to start over.'
+    currentCard = null
+    return
   }
-  cardButton.innerHTML = currentCard.getWord()
+  changeCardText(currentCard.getWords())
+  updateProgress()
 }
 
-let cardButton = document.getElementById('card-button')
-let knowButton = document.getElementById('know-button')
-let notKnowButton = document.getElementById('not-know-button')
-let undoButton = document.getElementById('undo-button')
 cardButton.addEventListener('click', () => {
+  console.log(cardButton)
+  cardButton.classList.toggle('flipped')
   currentCard.flip()
-  cardButton.innerHTML = currentCard.getWord()
 })
 
 knowButton.addEventListener('click', () => nextCard('know'))
 notKnowButton.addEventListener('click', () => nextCard('not-know'))
+
 undoButton.addEventListener('click', () => {
   // only add currentCard back into the deck, if it's not null, and the deck it would pull back from is not empty
   if (!currentCard) {
@@ -139,5 +191,14 @@ undoButton.addEventListener('click', () => {
   } else {
     return
   }
-  cardButton.innerHTML = currentCard.hu
+  changeCardText(currentCard.getWords())
+  updateProgress()
+})
+
+// exit confirmation prompt
+backButton.addEventListener('click', () => {
+  if (confirm('Are you sure you want to go back? All progress will be lost.')) {
+    window.removeEventListener('beforeunload', confirmExit)
+    window.location.href = 'index.html'
+  }
 })

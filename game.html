@@ -8,14 +8,18 @@
   </head>
   <body>
     <div class="container" id="game-container">
+      <p id="progress-indicator" class="">0/0</p>
       <div id="card-div">
-        <button id="card-button">_</button>
+        <button id="card-button">
+          <div class="front">_</div>
+          <div class="back">_</div>
+        </button>
       </div>
       <div id="actions-div">
-        <button class="action-button" id="know-button">Know</button>
-        <button class="action-button" id="not-know-button">Not Know</button>
-        <button class="action-button" id="undo-button">Undo</button>
-        <button class="action-button" style="font-size: 20px" onclick="window.location.href='index.html'">Back</button>
+        <button class="action-button" id="know-button">✓</button>
+        <button class="action-button" id="not-know-button">X</button>
+        <button class="action-button" id="undo-button">⎌</button>
+        <button class="action-button" id="back-button">🔙</button>
       </div>
     </div>
 
