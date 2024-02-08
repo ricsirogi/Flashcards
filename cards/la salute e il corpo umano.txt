@@ -66,8 +66,8 @@ elterjedt
 diffuso
 torok
 gola
-sano
 egészséges
+sano
 fájdalom
 dolore
 tart (időben)
@@ -148,12 +148,12 @@ mellkas
 petto
 mell
 seno
-spalla
 váll
+spalla
 nyak
 collo
-gomito
 könyök
+gomito
 ujj
 dito
 hüvelyk ujj
