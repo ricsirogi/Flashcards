@@ -3,7 +3,7 @@ cancro
 szív- és érrendszeri
 cardio-circolatorio
 cukorbetegség
-diabete
+il diabete
 infarktus
 infarto
 magas vérnyomás
@@ -53,7 +53,7 @@ lacrimare
 betegség
 malattia
 pollen
-polline
+il polline
 tüsszent
 starnutire
 ősz
@@ -69,7 +69,7 @@ gola
 egészséges
 sano
 fájdalom
-dolore
+il dolore
 tart (időben; pl: tart valameddig)
 durare
 láz
@@ -92,8 +92,6 @@ hasonló
 simile
 tünet
 sintomo
-tüsszent
-starnutire
 köhögés
 la tosse
 enyhít
@@ -104,8 +102,8 @@ köhögés elleni
 antitosse
 fegyver
 arma
-száj (il vagy la?)
-IL bocca
+száj 
+la bocca
 hatékony, hatásos
 efficace
 gyógyszer
@@ -136,7 +134,7 @@ comb
 la gamba
 térd
 ginocchio
-láb
+láb (lábfej; mint angolban a foot)
 il piede
 lábujj
 dito del piede
@@ -157,12 +155,12 @@ gomito
 ujj
 dito
 hüvelyk ujj
-pollice
+il pollice
 mutató ujj
 l'indice
 középső ujj
 il medio
 gyűrűs ujj
-l'anulare
+l'anulare (m)
 kisujj
 il mignolo

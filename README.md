@@ -17,3 +17,5 @@ Flashcards to help with studying new words
 - [ ] make it so the user can chose how many words to learn
 - [ ] make it so when pressing the tick or the x button, the card turns green or red for a brief moment with a nice animation
 - [ ] add a button to listen to the word
+- [ ] make a program that checks the txt file and notifies if there are odd number of lines or there's an italan word ending with e (so I can check if I wrote the article [névelő] for it), and other things maybe
+- [ ] make it so undo undoes even if I pressed an action button at the end of a deck (because normally it creates a new deck, and there's no logic to undo that rn)
