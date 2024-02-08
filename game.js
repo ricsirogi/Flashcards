@@ -128,11 +128,11 @@ function updateProgress() {
   progressIndicator.innerHTML = 'Progress: ' + (deck.length + 1) + '/' + totalDeckLength
 }
 
-function cardFlash(color) {
-  cardButton.style.animation = color + '-flash 0.30s cubic-bezier(0.445, 0.050, 0.550, 0.950)'
+function cardFlash(color, duration) {
+  cardButton.style.animation = color + '-flash ' + duration + 's cubic-bezier(0.445, 0.050, 0.550, 0.950)'
   setTimeout(() => {
     cardButton.style.animation = ''
-  }, 300)
+  }, duration * 1000)
 }
 //* ACTION BUTTONS
 //knowornot is a string, either 'know' or 'not-know' depending on which button was pressed
@@ -144,14 +144,13 @@ function nextCard(knowornot) {
     currentCard.flip()
     cardButton.classList.toggle('flipped')
   }
+
   if (knowornot === 'know') {
     learnedDeck.push(currentCard)
     lastPress.push('know')
-    cardFlash('green')
   } else if (knowornot === 'not-know') {
     notLearnedDeck.push(currentCard)
     lastPress.push('not-know')
-    cardFlash('red')
   } else {
     console.error('Invalid argument in nextCard()')
   }
@@ -170,8 +169,13 @@ function nextCard(knowornot) {
     currentCard = null
     return
   }
-  changeCardText(currentCard.getWords())
-  updateProgress()
+  let animationColor = knowornot === 'know' ? 'green' : 'red'
+  let animationDuration = 0.25
+  cardFlash(animationColor, animationDuration)
+  setTimeout(() => {
+    changeCardText(currentCard.getWords())
+    updateProgress()
+  }, animationDuration * 1000)
 }
 
 cardButton.addEventListener('click', () => {
