@@ -15,3 +15,5 @@ Flashcards to help with studying new words
 - [x] make it so the card is flipped to its 'hu' side when an action button is pressed or when it get's displayed (because otherwise, if I put it into the not-know deck, when it comes up again, it will be flipped to the wrong side)
 - [x] have some sort of indication that all the words have been learned
 - [ ] make it so the user can chose how many words to learn
+- [ ] make it so when pressing the tick or the x button, the card turns green or red for a brief moment with a nice animation
+- [ ] add a button to listen to the word

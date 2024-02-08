@@ -70,7 +70,7 @@ egészséges
 sano
 fájdalom
 dolore
-tart (időben)
+tart (időben; pl: tart valameddig)
 durare
 láz
 febbre
@@ -107,7 +107,7 @@ arma
 száj (il vagy la?)
 IL bocca
 hatékony, hatásos
-effiace
+efficace
 gyógyszer
 farmaco
 megelőz vmit
