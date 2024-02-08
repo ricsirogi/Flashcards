@@ -30,6 +30,30 @@ body {
   background: var(--element-bg-color);
 }
 
+@keyframes red-flash {
+  0% {
+    background: var(--element-bg-color);
+  }
+  45% {
+    background: rgb(123, 0, 0);
+  }
+  100% {
+    background: var(--element-bg-color);
+  }
+}
+
+@keyframes green-flash {
+  0% {
+    background: var(--element-bg-color);
+  }
+  50% {
+    background: rgb(0, 123, 0);
+  }
+  100% {
+    background: var(--element-bg-color);
+  }
+}
+
 #card-div {
   display: flex;
   justify-content: center;
@@ -86,7 +110,7 @@ button:active {
   height: 100%;
   font-size: 30px;
   position: relative;
-  transition: transform 0.35s;
+  transition: ease-in-out 0.35s;
   transform-style: preserve-3d;
   display: flex;
   align-items: center;

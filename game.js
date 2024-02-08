@@ -43,10 +43,12 @@ let progressIndicator = document.getElementById('progress-indicator')
 function changeCardText(texts) {
   cardFront.innerHTML = texts[0]
   cardBack.innerHTML = texts[1]
-  console.log(texts, cardFront)
 }
 
 function confirmExit(e) {
+  if (!currentCard) {
+    return
+  }
   e.preventDefault()
   e.returnValue = ''
 }
@@ -103,7 +105,6 @@ async function loadData() {
       allCards.push(new Card(huWord, enWord, 'hu'))
     }
 
-    console.log('Initial length of the deck: ' + allCards.length)
     totalDeckLength = allCards.length
 
     // shuffle the cards and put them into the deck
@@ -125,9 +126,14 @@ loadData().then(() => {
 function updateProgress() {
   // call this after taking the new card out of the deck (I think it makes more sense to call it after)
   progressIndicator.innerHTML = 'Progress: ' + (deck.length + 1) + '/' + totalDeckLength
-  console.log('deck length: ' + (deck.length + 1) + '/' + totalDeckLength)
 }
 
+function cardFlash(color) {
+  cardButton.style.animation = color + '-flash 0.30s cubic-bezier(0.445, 0.050, 0.550, 0.950)'
+  setTimeout(() => {
+    cardButton.style.animation = ''
+  }, 300)
+}
 //* ACTION BUTTONS
 //knowornot is a string, either 'know' or 'not-know' depending on which button was pressed
 function nextCard(knowornot) {
@@ -141,9 +147,11 @@ function nextCard(knowornot) {
   if (knowornot === 'know') {
     learnedDeck.push(currentCard)
     lastPress.push('know')
+    cardFlash('green')
   } else if (knowornot === 'not-know') {
     notLearnedDeck.push(currentCard)
     lastPress.push('not-know')
+    cardFlash('red')
   } else {
     console.error('Invalid argument in nextCard()')
   }
@@ -167,7 +175,6 @@ function nextCard(knowornot) {
 }
 
 cardButton.addEventListener('click', () => {
-  console.log(cardButton)
   cardButton.classList.toggle('flipped')
   currentCard.flip()
 })
@@ -195,10 +202,17 @@ undoButton.addEventListener('click', () => {
   updateProgress()
 })
 
+function backToMenu() {
+  window.removeEventListener('beforeunload', confirmExit)
+  window.location.href = 'index.html'
+}
 // exit confirmation prompt
 backButton.addEventListener('click', () => {
-  if (confirm('Are you sure you want to go back? All progress will be lost.')) {
-    window.removeEventListener('beforeunload', confirmExit)
-    window.location.href = 'index.html'
+  if (currentCard) {
+    if (confirm('Are you sure you want to go back? All progress will be lost.')) {
+      backToMenu()
+    }
+  } else {
+    backToMenu()
   }
 })
