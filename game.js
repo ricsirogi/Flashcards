@@ -17,7 +17,10 @@ class Card {
   }
 
   default() {
+    // flips the card to it's default side, returns true if the card was flipped
+    let flip = this.side !== this.defaultSide
     this.side = this.defaultSide
+    return flip
   }
 }
 
@@ -103,6 +106,15 @@ function uppercaseFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1)
 }
 
+// animate is a boolean, if true, the card will be flipped with an animation
+function defaultCard(animate) {
+  // toggle the flip animation, if the card was flipped
+  flip = currentCard.default()
+  if (true && flip) {
+    cardButton.classList.toggle('flipped')
+  }
+}
+
 async function loadData() {
   try {
     let response = await fetch('https://raw.githubusercontent.com/ricsirogi/Flashcards/main/cards/' + deckName + '.txt')
@@ -153,15 +165,15 @@ function cardFlash(color, duration) {
   }, duration * 1000)
 }
 //* ACTION BUTTONS
+
 //knowornot is a string, either 'know' or 'not-know' depending on which button was pressed
 function nextCard(knowornot) {
   if (currentCard === null) {
     return
   }
-  if (currentCard.side === 'en') {
-    currentCard.flip()
-    cardButton.classList.toggle('flipped')
-  }
+  console.log(currentCard)
+
+  defaultCard(true)
 
   if (knowornot === 'know') {
     learnedDeck.push(currentCard)
@@ -172,7 +184,6 @@ function nextCard(knowornot) {
   } else {
     console.error('Invalid argument in nextCard()')
   }
-  currentCard.default() // flip the card to it's default side, so if user undoes the action, or gets the card again, it will be on the default side
   if (deck.length > 0) {
     currentCard = deck.pop()
   } else if (notLearnedDeck.length > 0) {
@@ -189,13 +200,16 @@ function nextCard(knowornot) {
     currentCard = null
     return
   }
-  let animationColor = knowornot === 'know' ? 'green' : 'red'
-  let animationDuration = 0.25
-  cardFlash(animationColor, animationDuration)
+
+  // Flash the card with the appropriate color and then change the card
+  let flashColor = knowornot === 'know' ? 'green' : 'red'
+  let flashDuration = 0.25
+  cardFlash(flashColor, flashDuration)
   setTimeout(() => {
     changeCardText(currentCard.getWords())
     updateProgress()
-  }, animationDuration * 1000)
+    console.log(currentCard)
+  }, flashDuration * 1000)
 }
 
 cardButton.addEventListener('click', () => {
@@ -211,11 +225,10 @@ undoButton.addEventListener('click', () => {
   if (!currentCard) {
     return
   }
-
-  currentCard.default()
+  defaultCard(true)
 
   if (deck.length !== initialDeckLength && deck.length == totalDeckLength - 1) {
-    console.log('This')
+    console.log('This is when the point where the deck was shuffled')
   }
   if (lastPress[lastPress.length - 1] === 'know' && learnedDeck.length > 0) {
     deck.push(currentCard)
@@ -229,6 +242,7 @@ undoButton.addEventListener('click', () => {
     return
   }
   changeCardText(currentCard.getWords())
+
   updateProgress()
 })
 
