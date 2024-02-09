@@ -10,7 +10,8 @@ Flashcards to help with studying new words
 - [ ] make it so the user can chose how many words to learn
 - [ ] make it so I can send a notification to everyone currently using the website to ask them to reload, because I changed stuff
 - [ ] Fix a bug where the progress bar doesn't display stuff properly after starting a new pack (I think; idk how to replicate)
-- [ ] make it so undo undoes even if I pressed an action button at the end of a deck (because normally it creates a new deck, and there's no logic to undo that rn)
+- [ ] Make a color flash animation for undoing (?)
+- [x] make it so undo undoes even if I pressed an action button at the end of a deck (because normally it creates a new deck, and there's no logic to undo that rn)
 - [x] display for example the player is at 6/51
 - [x] add confimation for going back to menu (!!)
 - [x] make it so all words start with uppercase letter (handle cases if the word doesn't start with a letter, but maybe js handles it already idk)

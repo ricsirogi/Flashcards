@@ -58,7 +58,7 @@ let currentCard = null
 let lastPress = [] // keeps track if the button presses (a stack of strings 'know' or 'not-know')
 let totalDeckLength = 0
 let initialDeckLength = 0
-let undoBackup = new Backup(deck, learnedDeck, notLearnedDeck, currentCard, lastPress, totalDeckLength)
+let undoBackup = [new Backup([...deck], [...learnedDeck], [...notLearnedDeck], currentCard, [...lastPress], totalDeckLength)]
 
 function changeCardText(texts) {
   cardFront.innerHTML = texts[0]
@@ -107,10 +107,10 @@ function uppercaseFirstLetter(string) {
 }
 
 // animate is a boolean, if true, the card will be flipped with an animation
-function defaultCard(animate) {
+function defaultCard() {
   // toggle the flip animation, if the card was flipped
   flip = currentCard.default()
-  if (true && flip) {
+  if (flip) {
     cardButton.classList.toggle('flipped')
   }
 }
@@ -164,6 +164,7 @@ function cardFlash(color, duration) {
     cardButton.style.animation = ''
   }, duration * 1000)
 }
+
 //* ACTION BUTTONS
 
 //knowornot is a string, either 'know' or 'not-know' depending on which button was pressed
@@ -171,9 +172,8 @@ function nextCard(knowornot) {
   if (currentCard === null) {
     return
   }
-  console.log(currentCard)
-
-  defaultCard(true)
+  console.log(currentCard.getWords()[0])
+  defaultCard()
 
   if (knowornot === 'know') {
     learnedDeck.push(currentCard)
@@ -187,14 +187,30 @@ function nextCard(knowornot) {
   if (deck.length > 0) {
     currentCard = deck.pop()
   } else if (notLearnedDeck.length > 0) {
+    // Before resetting the decks and stuff, we need to save the current state of the game, so we can undo the last action
+
+    // we need to remove currentCard from either learned or not learned deck, otherwise,
+    // if the user undoes the last action, the card will be shown twice
+
+    // Also we need to .pop() the lastPress array, so the undo button will work correctly
+    backupLearnedDeck = [...learnedDeck]
+    backupNotLearnedDeck = [...notLearnedDeck]
+    if (knowornot === 'know') {
+      backupLearnedDeck.pop()
+    } else if (knowornot === 'not-know') {
+      backupNotLearnedDeck.pop()
+    }
+    lastPress.pop()
+
+    undoBackup.push(new Backup([...deck], backupLearnedDeck, backupNotLearnedDeck, currentCard, [...lastPress], totalDeckLength))
+
     // if the deck is empty, then the game is over, start over with the not learned cards
-    undoBackup = Backup(deck, learnedDeck, notLearnedDeck, currentCard, lastPress, totalDeckLength)
     deck = shuffleCards(notLearnedDeck)
     learnedDeck = []
     notLearnedDeck = []
+    totalDeckLength = deck.length
     currentCard = deck.pop()
     lastPress = []
-    totalDeckLength = deck.length
   } else {
     progressIndicator.innerHTML = 'Game over! Refresh the page to start over.'
     currentCard = null
@@ -202,13 +218,11 @@ function nextCard(knowornot) {
   }
 
   // Flash the card with the appropriate color and then change the card
-  let flashColor = knowornot === 'know' ? 'green' : 'red'
   let flashDuration = 0.25
-  cardFlash(flashColor, flashDuration)
+  cardFlash(knowornot, flashDuration)
   setTimeout(() => {
     changeCardText(currentCard.getWords())
     updateProgress()
-    console.log(currentCard)
   }, flashDuration * 1000)
 }
 
@@ -222,25 +236,37 @@ notKnowButton.addEventListener('click', () => nextCard('not-know'))
 
 undoButton.addEventListener('click', () => {
   // only add currentCard back into the deck, if it's not null, and the deck it would pull back from is not empty
-  if (!currentCard) {
-    return
+  if (!currentCard || lastPress.length === 0) {
+    if (deck.length !== initialDeckLength - 1 && deck.length == totalDeckLength - 1) {
+      console.log('This is when the point where the deck was shuffled')
+      let backup = undoBackup.pop().loadBackup()
+      deck = backup[0]
+      learnedDeck = backup[1]
+      notLearnedDeck = backup[2]
+      currentCard = backup[3]
+      lastPress = backup[4]
+      totalDeckLength = backup[5]
+      updateProgress()
+      changeCardText(currentCard.getWords())
+      console.log(backup)
+      return
+    } else {
+      return
+    }
   }
-  defaultCard(true)
+  defaultCard()
 
-  if (deck.length !== initialDeckLength && deck.length == totalDeckLength - 1) {
-    console.log('This is when the point where the deck was shuffled')
-  }
+  deck.push(currentCard)
+
   if (lastPress[lastPress.length - 1] === 'know' && learnedDeck.length > 0) {
-    deck.push(currentCard)
-    lastPress.pop()
     currentCard = learnedDeck.pop()
   } else if (lastPress[lastPress.length - 1] === 'not-know' && notLearnedDeck.length > 0) {
-    deck.push(currentCard)
-    lastPress.pop()
     currentCard = notLearnedDeck.pop()
   } else {
     return
   }
+
+  lastPress.pop()
   changeCardText(currentCard.getWords())
 
   updateProgress()

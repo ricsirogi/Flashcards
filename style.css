@@ -30,7 +30,7 @@ body {
   background: var(--element-bg-color);
 }
 
-@keyframes red-flash {
+@keyframes not-know-flash {
   0% {
     background: var(--element-bg-color);
   }
@@ -42,7 +42,7 @@ body {
   }
 }
 
-@keyframes green-flash {
+@keyframes know-flash {
   0% {
     background: var(--element-bg-color);
   }
