@@ -21,6 +21,21 @@ class Card {
   }
 }
 
+class Backup {
+  constructor(deck, learnedDeck, notLearnedDeck, currentCard, lastPress, totalDeckLength) {
+    this.deck = deck
+    this.learnedDeck = learnedDeck
+    this.notLearnedDeck = notLearnedDeck
+    this.currentCard = currentCard
+    this.lastPress = lastPress
+    this.totalDeckLength = totalDeckLength
+  }
+
+  loadBackup() {
+    return [this.deck, this.learnedDeck, this.notLearnedDeck, this.currentCard, this.lastPress, this.totalDeckLength]
+  }
+}
+
 let params = new URLSearchParams(window.location.search)
 let deckName = params.get('deck')
 
@@ -31,6 +46,7 @@ let knowButton = document.getElementById('know-button')
 let notKnowButton = document.getElementById('not-know-button')
 let undoButton = document.getElementById('undo-button')
 let backButton = document.getElementById('back-button')
+let progressIndicator = document.getElementById('progress-indicator')
 
 let deck = []
 let learnedDeck = []
@@ -38,7 +54,8 @@ let notLearnedDeck = []
 let currentCard = null
 let lastPress = [] // keeps track if the button presses (a stack of strings 'know' or 'not-know')
 let totalDeckLength = 0
-let progressIndicator = document.getElementById('progress-indicator')
+let initialDeckLength = 0
+let undoBackup = new Backup(deck, learnedDeck, notLearnedDeck, currentCard, lastPress, totalDeckLength)
 
 function changeCardText(texts) {
   cardFront.innerHTML = texts[0]
@@ -106,6 +123,7 @@ async function loadData() {
     }
 
     totalDeckLength = allCards.length
+    initialDeckLength = allCards.length
 
     // shuffle the cards and put them into the deck
     shuffleCards(allCards).forEach((element) => {
@@ -159,11 +177,13 @@ function nextCard(knowornot) {
     currentCard = deck.pop()
   } else if (notLearnedDeck.length > 0) {
     // if the deck is empty, then the game is over, start over with the not learned cards
+    undoBackup = Backup(deck, learnedDeck, notLearnedDeck, currentCard, lastPress, totalDeckLength)
     deck = shuffleCards(notLearnedDeck)
-    totalDeckLength = deck.length
-    notLearnedDeck = []
     learnedDeck = []
+    notLearnedDeck = []
     currentCard = deck.pop()
+    lastPress = []
+    totalDeckLength = deck.length
   } else {
     progressIndicator.innerHTML = 'Game over! Refresh the page to start over.'
     currentCard = null
@@ -190,6 +210,12 @@ undoButton.addEventListener('click', () => {
   // only add currentCard back into the deck, if it's not null, and the deck it would pull back from is not empty
   if (!currentCard) {
     return
+  }
+
+  currentCard.default()
+
+  if (deck.length !== initialDeckLength && deck.length == totalDeckLength - 1) {
+    console.log('This')
   }
   if (lastPress[lastPress.length - 1] === 'know' && learnedDeck.length > 0) {
     deck.push(currentCard)
