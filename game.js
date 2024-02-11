@@ -22,8 +22,23 @@ class Card {
     this.side = this.defaultSide
     return flip
   }
+
+  static fromData(data) {
+    let card = new Card(data.hu, data.en, data.side)
+    card.defaultSide = data.defaultSide
+    return card
+  }
+  toData() {
+    return {
+      hu: this.hu,
+      en: this.en,
+      side: this.side,
+      defaultSide: this.defaultSide,
+    }
+  }
 }
 
+// This class is used to store the states of the game before reshuffling the deck, so the user can even undo shuffling the deck
 class Backup {
   constructor(deck, learnedDeck, notLearnedDeck, currentCard, lastPress, totalDeckLength) {
     this.deck = deck
@@ -37,28 +52,64 @@ class Backup {
   loadBackup() {
     return [this.deck, this.learnedDeck, this.notLearnedDeck, this.currentCard, this.lastPress, this.totalDeckLength]
   }
+
+  static fromData(data) {
+    console.log('Backup from data:', data)
+    let backup = new Backup(
+      data.deck.map(Card.fromData),
+      data.learnedDeck.map(Card.fromData),
+      data.notLearnedDeck.map(Card.fromData),
+      data.currentCard ? Card.fromData(data.currentCard) : null,
+      data.lastPress,
+      data.totalDeckLength,
+    )
+    return backup
+  }
+
+  toData() {
+    return {
+      deck: this.deck.map((card) => card.toData()),
+      learnedDeck: this.learnedDeck.length ? this.learnedDeck.map((card) => card.toData()) : [],
+      notLearnedDeck: this.notLearnedDeck.length ? this.notLearnedDeck.map((card) => card.toData()) : [],
+      currentCard: this.currentCard ? this.currentCard.toData() : null,
+      lastPress: this.lastPress,
+      totalDeckLength: this.totalDeckLength,
+    }
+  }
 }
 
-let params = new URLSearchParams(window.location.search)
-let deckName = params.get('deck')
+function saveState() {
+  const state = {
+    deck: deck.map((card) => card.toData()),
+    learnedDeck: learnedDeck.map((card) => card.toData()),
+    notLearnedDeck: notLearnedDeck.map((card) => card.toData()),
+    currentCard: currentCard ? currentCard.toData() : null,
+    lastPress: lastPress,
+    totalDeckLength: totalDeckLength,
+    undoBackup: undoBackup.map((backup) => backup.toData()),
+  }
+  localStorage.setItem(deckName + 'gameState', JSON.stringify(state))
+}
 
-let cardButton = document.getElementById('card-button')
-let cardFront = cardButton.getElementsByClassName('front')[0]
-let cardBack = cardButton.getElementsByClassName('back')[0]
-let knowButton = document.getElementById('know-button')
-let notKnowButton = document.getElementById('not-know-button')
-let undoButton = document.getElementById('undo-button')
-let backButton = document.getElementById('back-button')
-let progressIndicator = document.getElementById('progress-indicator')
-
-let deck = []
-let learnedDeck = []
-let notLearnedDeck = []
-let currentCard = null
-let lastPress = [] // keeps track if the button presses (a stack of strings 'know' or 'not-know')
-let totalDeckLength = 0
-let initialDeckLength = 0
-let undoBackup = [new Backup([...deck], [...learnedDeck], [...notLearnedDeck], currentCard, [...lastPress], totalDeckLength)]
+// Load state from localStorage
+function loadState() {
+  const state = JSON.parse(localStorage.getItem(deckName + 'gameState'))
+  if (state) {
+    deck = []
+    learnedDeck = []
+    notLearnedDeck = []
+    deck = state.deck.map(Card.fromData)
+    learnedDeck = state.learnedDeck.map(Card.fromData)
+    notLearnedDeck = state.notLearnedDeck.map(Card.fromData)
+    currentCard = state.currentCard ? Card.fromData(state.currentCard) : null // in the inital backup, currentCard is null
+    lastPress = state.lastPress
+    totalDeckLength = state.totalDeckLength
+    undoBackup = state.undoBackup.map(Backup.fromData)
+    changeCardText(currentCard.getWords())
+    updateProgress()
+    console.log(undoBackup)
+  }
+}
 
 function changeCardText(texts) {
   cardFront.innerHTML = texts[0]
@@ -69,10 +120,11 @@ function confirmExit(e) {
   if (!currentCard) {
     return
   }
+  saveState()
+
   e.preventDefault()
   e.returnValue = ''
 }
-window.addEventListener('beforeunload', confirmExit)
 
 function hungarizeWord(word) {
   // for a while when I was writing the words file, I didn't know why python was displaying the hungarian characters wrong
@@ -146,32 +198,23 @@ async function loadData() {
   }
 }
 
-loadData().then(() => {
-  totalDeckLength = deck.length
-  currentCard = deck.pop()
-  changeCardText(currentCard.getWords())
-  updateProgress()
-})
-
-function updateProgress() {
-  // call this after taking the new card out of the deck (I think it makes more sense to call it after)
-  progressIndicator.innerHTML = 'Progress: ' + (deck.length + 1) + '/' + totalDeckLength
-}
-
 function cardFlash(color, duration) {
   cardButton.style.animation = color + '-flash ' + duration + 's cubic-bezier(0.445, 0.050, 0.550, 0.950)'
   setTimeout(() => {
     cardButton.style.animation = ''
   }, duration * 1000)
 }
-
-//* ACTION BUTTONS
+function updateProgress() {
+  // call this after taking the new card out of the deck (I think it makes more sense to call it after)
+  progressIndicator.innerHTML = 'Progress: ' + (deck.length + 1) + '/' + totalDeckLength
+}
 
 //knowornot is a string, either 'know' or 'not-know' depending on which button was pressed
 function nextCard(knowornot) {
-  if (currentCard === null) {
+  if (!currentCard) {
     return
   }
+
   console.log(currentCard.getWords()[0])
   defaultCard()
 
@@ -203,7 +246,7 @@ function nextCard(knowornot) {
     lastPress.pop()
 
     undoBackup.push(new Backup([...deck], backupLearnedDeck, backupNotLearnedDeck, currentCard, [...lastPress], totalDeckLength))
-
+    console.log('backed up', undoBackup)
     // if the deck is empty, then the game is over, start over with the not learned cards
     deck = shuffleCards(notLearnedDeck)
     learnedDeck = []
@@ -226,6 +269,43 @@ function nextCard(knowornot) {
   }, flashDuration * 1000)
 }
 
+let params = new URLSearchParams(window.location.search)
+let deckName = params.get('deck')
+
+let cardButton = document.getElementById('card-button')
+let cardFront = cardButton.getElementsByClassName('front')[0]
+let cardBack = cardButton.getElementsByClassName('back')[0]
+let knowButton = document.getElementById('know-button')
+let notKnowButton = document.getElementById('not-know-button')
+let undoButton = document.getElementById('undo-button')
+let backButton = document.getElementById('back-button')
+let resetButton = document.getElementById('reset-button')
+let progressIndicator = document.getElementById('progress-indicator')
+
+let deck = [] // stack that stores the cards that are to be pulled
+let learnedDeck = [] // stack that stores the cards that the user knows
+let notLearnedDeck = [] // stack that stores the cards that the user doesn't know, will be reshuffled and placed back into the deck
+let currentCard = null // the card that is currently being shown
+let lastPress = [] // keeps track if the button presses (a stack of strings 'know' or 'not-know')
+let totalDeckLength = 0 // the total number of cards in the current deck
+let initialDeckLength = 0 // the total number of cards in the initial deck (before disposing the known cards into the learnedDeck stack)
+let undoBackup = [] // stack that stores the states of the game before reshuffling the deck, so the user can even undo shuffling the deck
+
+window.addEventListener('beforeunload', confirmExit)
+
+// load the game state from localStorage
+// If it's not there, load the data from the file
+if (localStorage.getItem(deckName + 'gameState') === null) {
+  loadData().then(() => {
+    totalDeckLength = deck.length
+    currentCard = deck.pop()
+    changeCardText(currentCard.getWords())
+    updateProgress()
+  })
+} else {
+  loadState()
+}
+
 cardButton.addEventListener('click', () => {
   cardButton.classList.toggle('flipped')
   currentCard.flip()
@@ -238,7 +318,7 @@ undoButton.addEventListener('click', () => {
   // only add currentCard back into the deck, if it's not null, and the deck it would pull back from is not empty
   if (!currentCard || lastPress.length === 0) {
     if (deck.length !== initialDeckLength - 1 && deck.length == totalDeckLength - 1) {
-      console.log('This is when the point where the deck was shuffled')
+      console.log('Reversing shuffling', undoBackup)
       let backup = undoBackup.pop().loadBackup()
       deck = backup[0]
       learnedDeck = backup[1]
@@ -248,12 +328,12 @@ undoButton.addEventListener('click', () => {
       totalDeckLength = backup[5]
       updateProgress()
       changeCardText(currentCard.getWords())
-      console.log(backup)
       return
     } else {
       return
     }
   }
+  console.log('Pressed undo; undoBackup:', undoBackup)
   defaultCard()
 
   deck.push(currentCard)
@@ -279,10 +359,19 @@ function backToMenu() {
 // exit confirmation prompt
 backButton.addEventListener('click', () => {
   if (currentCard) {
-    if (confirm('Are you sure you want to go back? All progress will be lost.')) {
+    saveState()
+    if (confirm('Are you sure you want to go back? Your progress will be saved.')) {
       backToMenu()
     }
   } else {
     backToMenu()
+  }
+})
+
+resetButton.addEventListener('click', () => {
+  if (!currentCard || confirm('Are you sure you want to reset the game? All progress will be lost.')) {
+    localStorage.removeItem(deckName + 'gameState')
+    window.removeEventListener('beforeunload', confirmExit)
+    window.location.reload()
   }
 })

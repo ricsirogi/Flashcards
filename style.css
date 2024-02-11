@@ -8,6 +8,7 @@
 body {
   background-color: var(--bg-color);
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -63,6 +64,7 @@ body {
   hyphens: auto;
   perspective: 1000px;
 }
+
 #actions-div {
   display: flex;
   flex-direction: column;
@@ -70,6 +72,17 @@ body {
   justify-content: space-around;
   width: 600px;
 }
+
+#danger-div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#danger-div button {
+  width: 22%;
+}
+
 button {
   background: var(--element-bg-color);
   font-size: 50px;
@@ -149,10 +162,12 @@ button:active {
   height: 100%;
   backface-visibility: hidden;
 }
+
 #card-button .back {
   transform: rotateX(180deg);
   color: var(--element-bg-color);
 }
+
 #card-button.flipped .back {
   color: white;
 }
