@@ -209,6 +209,12 @@ function updateProgress() {
   progressIndicator.innerHTML = 'Progress: ' + (deck.length + 1) + '/' + totalDeckLength
 }
 
+function textToSpeech(text) {
+  var utterance = new SpeechSynthesisUtterance(text)
+  utterance.lang = language + '-' + language.toUpperCase()
+  window.speechSynthesis.speak(utterance)
+}
+
 //knowornot is a string, either 'know' or 'not-know' depending on which button was pressed
 function nextCard(knowornot) {
   if (!currentCard) {

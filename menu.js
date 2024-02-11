@@ -1,4 +1,4 @@
-var listOfDecs = ['angol_szavak', 'la salute e il corpo umano', 'olasz ruhak', 'olasz_tetel_tema_8_1tol_10ig_szavak', 'olasz_tv_multimedia', 'unita11_plus_pagina_85', 'test']
+var listOfDecs = ['angol_szavak_en', 'la salute e il corpo umano_it', 'olasz ruhak_it', 'olasz_tetel_tema_8_1tol_10ig_szavak_it', 'olasz_tv_multimedia_it', 'unita11_plus_pagina_85_it', 'test_en']
 
 function createOptions() {
   let parent = document.getElementById('menu-container')
