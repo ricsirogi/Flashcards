@@ -25,9 +25,9 @@ class Card {
 
   static fromData(data) {
     let card = new Card(data.hu, data.en, data.side)
-    card.defaultSide = data.defaultSide
     return card
   }
+
   toData() {
     return {
       hu: this.hu,
@@ -54,7 +54,6 @@ class Backup {
   }
 
   static fromData(data) {
-    console.log('Backup from data:', data)
     let backup = new Backup(
       data.deck.map(Card.fromData),
       data.learnedDeck.map(Card.fromData),
@@ -107,7 +106,6 @@ function loadState() {
     undoBackup = state.undoBackup.map(Backup.fromData)
     changeCardText(currentCard.getWords())
     updateProgress()
-    console.log(undoBackup)
   }
 }
 
@@ -209,19 +207,13 @@ function updateProgress() {
   progressIndicator.innerHTML = 'Progress: ' + (deck.length + 1) + '/' + totalDeckLength
 }
 
-function textToSpeech(text) {
-  var utterance = new SpeechSynthesisUtterance(text)
-  utterance.lang = language + '-' + language.toUpperCase()
-  window.speechSynthesis.speak(utterance)
-}
-
 //knowornot is a string, either 'know' or 'not-know' depending on which button was pressed
 function nextCard(knowornot) {
   if (!currentCard) {
     return
   }
 
-  console.log(currentCard.getWords()[0])
+  console.log('next card from', currentCard.getWords()[0])
   defaultCard()
 
   if (knowornot === 'know') {
@@ -252,7 +244,7 @@ function nextCard(knowornot) {
     lastPress.pop()
 
     undoBackup.push(new Backup([...deck], backupLearnedDeck, backupNotLearnedDeck, currentCard, [...lastPress], totalDeckLength))
-    console.log('backed up', undoBackup)
+
     // if the deck is empty, then the game is over, start over with the not learned cards
     deck = shuffleCards(notLearnedDeck)
     learnedDeck = []
@@ -266,6 +258,7 @@ function nextCard(knowornot) {
     return
   }
 
+  console.log('to', currentCard.getWords()[0])
   // Flash the card with the appropriate color and then change the card
   let flashDuration = 0.25
   cardFlash(knowornot, flashDuration)
@@ -277,6 +270,7 @@ function nextCard(knowornot) {
 
 let params = new URLSearchParams(window.location.search)
 let deckName = params.get('deck')
+const language = deckName.split('_')[deckName.split('_').length - 1]
 
 let cardButton = document.getElementById('card-button')
 let cardFront = cardButton.getElementsByClassName('front')[0]
@@ -324,7 +318,6 @@ undoButton.addEventListener('click', () => {
   // only add currentCard back into the deck, if it's not null, and the deck it would pull back from is not empty
   if (!currentCard || lastPress.length === 0) {
     if (deck.length !== initialDeckLength - 1 && deck.length == totalDeckLength - 1) {
-      console.log('Reversing shuffling', undoBackup)
       let backup = undoBackup.pop().loadBackup()
       deck = backup[0]
       learnedDeck = backup[1]
@@ -339,7 +332,7 @@ undoButton.addEventListener('click', () => {
       return
     }
   }
-  console.log('Pressed undo; undoBackup:', undoBackup)
+
   defaultCard()
 
   deck.push(currentCard)
