@@ -20,20 +20,19 @@ Flashcards to help with studying new words/definitions
 You can submit your deck in as text, currently only using the _one word one line_ format, where you put each piece of information in a new line
 Example:
 
-> Sum
-> The result of adding two or more numbers.
-> Difference
-> The result of subtracting one number from another.
-> Product
-> The result of multiplying two or more numbers.
-> Quotient
-> The result of dividing one number by another.
+> Sum return
+> The result of adding two or more numbers. return
+> Difference return
+> The result of subtracting one number from another. return
+> Product return
+> The result of multiplying two or more numbers. return
+> Quotient return
+> The result of dividing one number by another. return
 
 In the future I plan to add more formats, with the goal of making the format customizable
 
 ## TODO
 
-- [ ] add a button to listen to the word
 - [ ] make a program that checks the txt file and notifies if there are odd number of lines or there's an italan word ending with e (so I can check if I wrote the article [névelő] for it), and other things maybe
 - [ ] make it so the user can chose how many words to learn
 - [ ] make it so I can send a notification to everyone currently using the website to ask them to reload, because I changed stuff
@@ -44,6 +43,8 @@ In the future I plan to add more formats, with the goal of making the format cus
 - [ ] Make the default side customizeable
 - [ ] When reshuffling, make it optional to exclude the know-deck
 - [ ] make it so reading the deck from the txt file is more versitile, so the user doesn't have to use the format of _one word one line_
+- [ ] make it so the card animates when know or not-know button is clicked: if know, then it goes away, if not know, it goes to the back of the deck
+- [ ] add a button to listen to the word
 - [x] make it so it saves players' progress
 - [x] make it so undo undoes even if I pressed an action button at the end of a deck (because normally it creates a new deck, and there's no logic to undo that rn)
 - [x] display for example the player is at 6/51
