@@ -20,14 +20,14 @@ Flashcards to help with studying new words/definitions
 You can submit your deck in as text, currently only using the _one word one line_ format, where you put each piece of information in a new line
 Example:
 
-> Sum return
-> The result of adding two or more numbers. return
+> Sum  
+> The result of adding two or more numbers.  
 > Difference return
-> The result of subtracting one number from another. return
-> Product return
-> The result of multiplying two or more numbers. return
-> Quotient return
-> The result of dividing one number by another. return
+> The result of subtracting one number from another.  
+> Product  
+> The result of multiplying two or more numbers.  
+> Quotient  
+> The result of dividing one number by another.
 
 In the future I plan to add more formats, with the goal of making the format customizable
 
