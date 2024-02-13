@@ -22,7 +22,7 @@ Example:
 
 > Sum  
 > The result of adding two or more numbers.  
-> Difference return
+> Difference  
 > The result of subtracting one number from another.  
 > Product  
 > The result of multiplying two or more numbers.  
