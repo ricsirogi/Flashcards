@@ -170,8 +170,15 @@ async function loadData() {
     let response = await fetch('https://raw.githubusercontent.com/ricsirogi/Flashcards/main/cards/' + deckName + '.txt')
     let data = await response.text()
 
-    // create all the cards
+    //* create all the cards
     data = data.split('\n')
+
+    // remove all stray newline characters from the end of data
+    while (data[data.length - 1] === '\n') {
+      data.pop()
+    }
+
+    // check if the number of lines in the file is even
     if (data.length % 2 !== 0) {
       console.error('The number of lines in the file is not even.' + '\n' + data)
       return
