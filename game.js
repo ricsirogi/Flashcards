@@ -174,13 +174,14 @@ async function loadData() {
     data = data.split('\n')
 
     // remove all stray newline characters from the end of data
-    while (data[data.length - 1] === '\n') {
+    while (data[data.length - 1] === '\n' || data[data.length - 1] === '') {
       data.pop()
     }
 
     // check if the number of lines in the file is even
     if (data.length % 2 !== 0) {
       console.error('The number of lines in the file is not even.' + '\n' + data)
+      console.log('this is the last', data[data.length - 1])
       return
     }
 
