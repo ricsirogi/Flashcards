@@ -10,7 +10,7 @@ narancslá
 spremuta d'arancia
 alkoholos kávé
 caffé corretto
-italo
+ital
 la bibita
 croissant
 il cornetto
@@ -34,7 +34,7 @@ paradicsom
 pomodoro
 kasszánál fizetni
 pagara alla cassa
-palackozott italo
+palackozott ital
 la bibita  in bottiglia
 vendég (pl. egy bárban)
 il cliente

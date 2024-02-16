@@ -54,3 +54,4 @@ In the future I plan to add more formats, with the goal of making the format cus
 - [x] make it so the card is flipped to its 'hu' side when an action button is pressed or when it get's displayed (because otherwise, if I put it into the not-know deck, when it comes up again, it will be flipped to the wrong side)
 - [x] have some sort of indication that all the words have been learned
 - [x] make it so when pressing the tick or the x button, the card turns green or red for a brief moment with a nice animation
+

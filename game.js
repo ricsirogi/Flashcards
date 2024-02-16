@@ -167,7 +167,7 @@ function defaultCard() {
 
 async function loadData() {
   try {
-    let response = await fetch('https://raw.githubusercontent.com/ricsirogi/Flashcards/main/cards/' + deckName + '.txt')
+    let response = await fetch('https://raw.githubusercontent.com/ricsirogi/Flashcards/main/decks/' + deckName + '.txt')
     let data = await response.text()
 
     //* create all the cards
