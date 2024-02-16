@@ -1,0 +1,122 @@
+mosogató
+il lavandino
+fiók
+il casetto
+fotel
+la poltrona
+szoba
+la camera
+étkezőszoba
+la sala da pranzo
+könyv
+il libro
+lépcső
+la scala
+folyosó
+il corridoio
+erkély
+il balcone
+bútor
+il mobile
+íróasztal
+la scrivania
+kert
+il giardino
+kredenc (nagy fiókos szekrény)
+la credenza
+bejárat
+l'entrata
+ruhásszekrény
+la guardaroba
+hálószoba
+la camera da letto
+wc
+il water
+terasz
+la terrazza
+dísztárgy
+il soprammobile
+fiókos szekrény
+la casettiera
+mosógép
+la lavatrice
+előszoba
+l'ingresso
+udvar
+il cortile
+beépített/felszerelt
+la parete attrezza
+szőnyeg
+il tappeto
+garázs
+il garage
+fal
+la parete
+padlás
+la soffita
+ruha akasztó
+appendiabiti
+ágy
+il letto
+mosdókagyló
+il lavandino
+fali polc
+la mensola
+fürdőszoba
+il bagno
+sütő, kemence
+il forno
+mosószoba
+la lavanderia
+nappali
+il salotto
+tükörlo
+specchio
+bejárat
+l'ingresso
+pince
+la cantina
+főzőlap
+il fornello
+elektromos háztartási készülék
+gli elettrodomestici
+kanapé
+il divano
+konyha
+la cucina
+könyvespolc
+la libreria
+kémény
+il camino
+TV
+il televisore
+festmény
+il guadro
+kis sütő, kemencécske
+il forndetto
+tusoló
+la doccia
+bidé
+il bidet
+asztal
+il tavolo
+szekrény
+L'armadio
+szék
+la sedia
+komód
+il comodino
+kamra
+il ripostiglio
+kád
+la vasca
+mosogatógép
+la lavastoviglie
+vasaló
+il ferro da stiro
+törölköző
+l'asciugamano
+egészségügyi berendezés
+il sanitaro
+kandalló
+il camino

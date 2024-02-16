@@ -1,0 +1,102 @@
+észak-nyugat
+nord-ovest
+ködös az idő
+c'é la nebbia
+jégvirág/hópehely
+i fiocchi di neve
+köd
+la nebbia
+napos nap van
+é una giornata soleggiata
+dél
+sud
+esik (az eső)
+piove
+tél
+inverno
+fent van a Nap
+c'é il sole
+eső
+la pioggia
+észak-kelet
+nord-est
+szemerkél
+pioviggina
+nincs felhő
+non c'é una nuvola
+fagy van
+si gela
+kutyahideg van
+fa un freddo cane
+villám
+il lampo
+észak
+nord
+meleg van
+fa caldo
+jeges idő van(2)
+c'é il ghiaccio, é ghiacciato
+nyár
+l'estate (f)
+szél
+il vento
+dél-kelet
+sud-est
+derült az ég
+il cielo é sereno
+kelet
+est
+észak-nyugat
+sud-ovest
+jég
+il ghiaccio
+ősz
+il autunno
+mennydörgés
+il tuono
+hó
+la neve
+rossz idő van
+fa brutto tempo
+nagyon esik (2)
+piove a dirotto, piove a catinelle
+szállingózik
+una nevicata
+hőmérséklet
+la temperatura
+tavasz
+primavera
+rossz idő van
+fa brutto
+nyugat
+ovest
+jégeső
+la grandina
+csökken
+in diminuzione
+zivatar van
+c'é il temporale
+havazik
+nevica
+jó idő van
+fa bello tempo
+hideg van
+fa freddo
+alacsony
+bassa
+szivárvány
+l'arcobaleno
+enyhe
+mite
+magas (2)
+alta/elevata
+fúj a szél(2)
+c'é vento/tira vento
+tornádó (2)
+la tromba d'aria/il tornado
+felhős az ég (2)
+il cielo é coperto/ nuvoloso
+emelkedik (2)
+in aumento/rialzo
+fülledt az idő (2)
+é afoso, c'é afa

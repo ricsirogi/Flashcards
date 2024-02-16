@@ -1,0 +1,134 @@
+dire
+avere detto (mond)
+concedere
+avere concesso (adományoz)
+prendere
+avere preso (kér, fog, vesz)
+soffrire
+avere sofferto (szenved)
+dirigere
+avere diretto (irányít)
+aprire
+avere aperto (kinyit)
+escludere
+avere escluso (kizár, kirekeszt)
+promettere
+avere promsesso (megígér)
+ammettere
+avere ammesso (befogad, felvesz)
+vincere
+avere vinto (győz)
+risolvere
+avere risolto (megold)
+mettere
+avere messo (tesz, rak)
+tradurre
+avere tradotto (lefordít)
+insistere
+avere insistito (kitart)
+discutere
+avere discusso (megvitat, megbeszél)
+offendere
+avere offeso (megbánt, megsért)
+leggere
+avere letto (olvas)
+scegliere 
+avere scelto (választ)
+accendere
+avere acceso (felkapcsol)
+spingere
+avere spinto (lök)
+offrire
+avere offerto (ajánl)
+rompere
+avere rotto (törni, eltörni)
+chiudere
+avere chiuso (becsuk)
+spendere
+avere speso (költ)
+trarre
+avere tratto (húz)
+esplodere
+essere espolso (kilő, kitör, felrobban)
+rimanere
+essere rimasto (marad)
+correre
+avere/essere corso (fut)
+piacere
+essere piaciuto (tetszik)
+scendere
+avere/essere sceso (lemegy/leszáll)
+vivere
+avere/essere vito (él)
+dipendere
+essere dipeso (függ vmitől)
+venire
+essere venuto (jön)
+essere
+essere stato (lenni - létige)
+nascare
+essere nato (megszületik)
+succedere
+essere successo (megtörténik)
+morire
+essere morto (meghal)
+giungere
+essere giunto (összeköt)
+esprimere
+avere/essere espresso (kifejez)
+crescere
+avere/essere cresciuto (felnő)
+piangere
+avere pianto (sírni)
+difendere
+avere difeso (megvéd)
+scrivere
+avere scritto (ír)
+uccidere
+avere ucciso (megöl)
+decidere
+avere deciso (eldönt)
+nascondere
+avere nascosto (elrejt)
+distinguere
+avere distino (megkülönböztet)
+permettere
+avere permesso (megenged)
+correggere
+avere corretto (kijavít)
+rispondere
+avere risposto (válaszol)
+esistere
+essere esistito (létezik)
+vedere
+avere visto (lát)
+fare
+avere fatto (csinál)
+conoscere
+avere conosciuto (ismer)
+ridere
+avere riso (nevet)
+proporre
+avere proposto (ajánl)
+chiedere
+avere chiesto (kérdez)
+muovere
+avere mosso (mozog)
+deludere
+avere deluso (csalódást okoz)
+dividere
+avere diviso (eloszt, szétválaszt)
+distruggere
+avere distrutto (elpusztít, tönkretesz)
+concludere
+avere concluso (összefoglal)
+perdere
+avere preso (elkésik, elveszíteni)
+spengere
+avere spento (kikapcsol)
+appendere
+avere appeso (felakaszt)
+raggiungere
+avere raggiunto (elérni)
+bere
+avere bevuto (iszik)

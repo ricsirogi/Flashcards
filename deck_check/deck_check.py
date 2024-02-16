@@ -167,6 +167,7 @@ def ask_for_change(deck_name:str, word_error:list[WordError], start:int = 0, rec
         elif ans == "4":
             if not changes:
                 print("No changes to undo")
+                continue
             else:
                 undo_change(deck_name, changes.pop())
                 # Alright this might get complicated. At this point I undid the change, so I need to ask this word again
@@ -202,11 +203,10 @@ def undo_change(deck_name:str, change:tuple[str, str]):
     Undoes a change made to the deck
     """
     if change[1] == "Exception added":
-        with open(current_dir + "\\"+ "exceptions.json", 'r') as f:
-            data = json.load(f)
-        data[deck_name].remove(change[0])
-        with open(current_dir + "\\"+ "exceptions.json", 'w') as f:
-            json.dump(data, f)
+        # I don't need to do anything here, 
+        # because I would just need to remove the exception from the changes list, 
+        # but I already did that when I called this function
+        pass
     elif "Article added" in change[1]:
         # I get the article by getting the text after the "Article added: " text (in changes[1])
         # I index 15, because "Article added: " is 15 characters long 
@@ -254,7 +254,7 @@ while True: # Program loop
             print(f"{error.word} - {error.error}")
         ans = input("\nDo you want to change the deck? (y/n) ")
         if ans == "y":
-            changes = ask_for_change(checked_deck, word_errors, 0, [])
+            changes = list(set(ask_for_change(checked_deck, word_errors, 0, []))) # remove duplciate changes like this cuz im lazy
             print()
             print("Changes made:")
             for change in changes:
