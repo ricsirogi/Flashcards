@@ -1,5 +1,5 @@
 énekes
-cantante
+il cantante
 eltűnt
 sparito
 valójában, ténylegesen
@@ -9,21 +9,21 @@ tendenza
 spontán
 spontanea
 nyertes
-vincitrice
+il vincitore; la vincitrice
 vélemény
-opinione
+la opinione
 másé, másoké
 altrui
 jövő a múltban
 futuro nel passato
 egyszerű feltételes mód
-condizionale semplice
+il condizionale semplice
 összetett feltételes mód
 condizionale composto
 asszisztens
 l'assistente (m)
 applikáció
-applicazione
+l'applicazione (f)
 őszinte
 sincero
 rajongója valaminek, lelkes
@@ -39,7 +39,7 @@ realizzabile
 kedvesen
 gentilmente
 járókelő
-passante
+il passante
 nem biztos hír
 notizia non certa
 belekever
@@ -89,11 +89,11 @@ microfono
 dobkészlet
 batteria
 fülhallgató
-cuffie
+le cuffie
 billentyűs hangszer
 tastiera
 nyomozás, kutatás
-indagine
+l'indagine (f)
 kitalálni
 individuare
 mindenki
@@ -101,7 +101,7 @@ ognuno
 évi
 annuale
 énekes aki magának írja a zenét (m és f)(?)
-(m)cantautore, (f)cantautrice
+il cantautore; la cantautrice
 meghatni, elérzékenyíteni
 emozionare
 etnikai

@@ -33,11 +33,11 @@ l'abbonamento
 fikció (?)
 fiction
 műsorvezető
-conduttore
+il conduttore; la conduttrice
 kikapcsolt TV
-televisore
+il televisore
 bekapcsolt TV
-televisione
+la televisione
 bekapcsolni
 accendere
 kapcsolgatni a csatornákat
@@ -89,7 +89,7 @@ tematico/a
 televíziós
 televisivo/a
 internet
-rete
+la rete
 kölcsönkérni valamit
 chiedere qualcosa in prestito
 kifejezni egy véleményt
@@ -97,7 +97,7 @@ esprimere un parere
 kifejezni
 esprimere
 vélemény
-parere
+il parere
 nekem az tűnik valahogy
 mi pare qualcosa
 segíteni (kifejezés)
