@@ -1,5 +1,5 @@
 function startGame() {
-  window.location.href = 'game.html?deck=' + encodeURIComponent(selectedDeck) + '&start=' + slider.noUiSlider.get()[0] + '&end=' + slider.noUiSlider.get()[1]
+  window.location.href = 'game.html?deck=' + encodeURIComponent(selectedDeck) + '&start=' + Math.floor(slider.noUiSlider.get()[0]) + '&end=' + Math.floor(slider.noUiSlider.get()[1])
 }
 
 function unselect() {
@@ -19,7 +19,6 @@ function select() {
       })
     })
   })
-
 }
 
 function getDeckLength(deck) {
