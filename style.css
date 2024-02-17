@@ -4,7 +4,9 @@
   --button-hovered-color: rgb(0, 5, 150);
   --button-pressed-color: rgb(0, 5, 140);
 }
-
+* {
+  font-family: Consolas;
+}
 body {
   background-color: var(--bg-color);
 }
@@ -46,6 +48,19 @@ body {
   width: 5%;
 }
 
+#slider-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width:100%
+}
+
+#slider {
+  width: 80%; /* This will make the slider take up the full width of its container */
+}
+
 #card-div {
   display: flex;
   justify-content: center;
@@ -64,20 +79,20 @@ body {
   width: 600px;
 }
 
-#danger-div {
+.danger-div {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-#danger-div button {
+.danger-div button {
   width: 22%;
 }
 
 button {
   background: var(--element-bg-color);
   font-size: 50px;
-  font-family: Consolas;
+  
   color: white;
   padding: 10px 20px;
   border-radius: 10px;
@@ -109,11 +124,9 @@ button:active {
 .action-button:active {
   transform: scale(0.95);
 }
-
-#progress-indicator {
+p {
   color: white;
   font-size: 25px;
-  font-family: Consolas;
   margin-bottom: 20px;
   border-style: solid;
   border-radius: 10px;

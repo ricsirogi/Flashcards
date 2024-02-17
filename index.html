@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flashcards by ricsirogi</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-    <div class="container" id="menu-container"></div>
-    <script src="menu.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flashcards by ricsirogi</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/nouislider@14.6.3/distribute/nouislider.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/nouislider@14.6.3/distribute/nouislider.min.js"></script>
+  <div id="slider-container">
+    <p>Select how much you want to learn!</p>
+    <div id="slider"></div>
+    <p><span id="sliderValue1"></span> - <span id="sliderValue2"></span></p>
+    <div class="danger-div">
+      <button class="action-button" id="accept-button">✓</button>
+      <div class="spacer"></div>
+      <button class="action-button" id="unselect-button">↤</button>
+    </div>
+  </div>
+  <div class="container" id="menu-container">
+  </div>
+
+
+
+  <script src="menu.js"></script>
+  <script src="slider.js"></script>
+</body>
+
 </html>

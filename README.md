@@ -33,7 +33,6 @@ In the future I plan to add more formats, with the goal of making the format cus
 
 ## TODO
 
-- [ ] make a program that reads the decks in the decks folder so I can just copy it and paste it into the js
 - [ ] make it so the user can chose how many words to learn
 - [ ] make it so I can send a notification to everyone currently using the website to ask them to reload, because I changed stuff
 - [ ] Fix a bug where the progress bar doesn't display stuff properly after starting a new pack (I think; idk how to replicate)
@@ -45,6 +44,7 @@ In the future I plan to add more formats, with the goal of making the format cus
 - [ ] make it so reading the deck from the txt file is more versitile, so the user doesn't have to use the format of _one word one line_
 - [ ] make it so the card animates when know or not-know button is clicked: if know, then it goes away, if not know, it goes to the back of the deck
 - [ ] add a button to listen to the word
+- [x] make a program that reads the decks in the decks folder so I can just copy it and paste it into the js
 - [x] make a program that checks the txt file and notifies if there are odd number of lines or there's an italan word ending with e (so I can check if I wrote the article [névelő] for it), and other things maybe
 - [x] make it so it saves players' progress
 - [x] make it so undo undoes even if I pressed an action button at the end of a deck (because normally it creates a new deck, and there's no logic to undo that rn)

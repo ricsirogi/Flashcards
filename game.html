@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flashcards by ricsirogi</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-    <div class="container" id="game-container">
-      <p id="progress-indicator" class="">0/0</p>
-      <div id="card-div">
-        <button id="card-button">
-          <div class="front">_</div>
-          <div class="back">_</div>
-        </button>
-      </div>
-      <div id="actions-div">
-        <button class="action-button" id="know-button">✓</button>
-        <button class="action-button" id="not-know-button">X</button>
-        <button class="action-button" id="undo-button">⎌</button>
-        <div id="danger-div">
-          <button class="action-button" id="back-button">↤</button>
-          <div class="spacer"></div>
-          <button class="action-button" id="reset-button">↺</button>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flashcards by ricsirogi</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <div class="container" id="game-container">
+    <p id="progress-indicator" class="">0/0</p>
+    <div id="card-div">
+      <button id="card-button">
+        <div class="front">_</div>
+        <div class="back">_</div>
+      </button>
+    </div>
+    <div id="actions-div">
+      <button class="action-button" id="know-button">✓</button>
+      <button class="action-button" id="not-know-button">X</button>
+      <button class="action-button" id="undo-button">⎌</button>
+      <div class="danger-div">
+        <button class="action-button" id="back-button">↤</button>
+        <div class="spacer"></div>
+        <button class="action-button" id="reset-button">↺</button>
       </div>
     </div>
-    <script src="game.js"></script>
-  </body>
+  </div>
+  <script src="game.js"></script>
+</body>
+
 </html>

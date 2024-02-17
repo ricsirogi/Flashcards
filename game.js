@@ -187,9 +187,15 @@ async function loadData() {
 
     allCards = []
     for (let i = 0; i < data.length; i = i + 2) {
+      if (i < startNum * 2) {
+        continue
+      } else if (i > endNum * 2) {
+        break
+      }
       huWord = uppercaseFirstLetter(hungarizeWord(data[i]))
       enWord = uppercaseFirstLetter(data[i + 1])
       allCards.push(new Card(huWord, enWord, 'hu'))
+
     }
 
     totalDeckLength = allCards.length
@@ -278,6 +284,8 @@ function nextCard(knowornot) {
 
 let params = new URLSearchParams(window.location.search)
 let deckName = params.get('deck')
+let startNum = params.get('start') - 1 // -1 because uh indexes
+let endNum = params.get('end') - 1
 const language = deckName.split('_')[deckName.split('_').length - 1]
 
 let cardButton = document.getElementById('card-button')
