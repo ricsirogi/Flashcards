@@ -6,13 +6,17 @@
   --folder-bg-color: rgb(183, 119, 0);
   --folder-hover-color: rgb(163, 99, 0);
   --folder-pressed-color: rgb(143, 89, 0);
+  --default-side-button-selected-color: rgb(63, 184, 175);
 }
+
 * {
   font-family: Consolas;
 }
+
 body {
   background-color: var(--bg-color);
 }
+
 button {
   background: var(--element-bg-color);
   font-size: 50px;
@@ -23,13 +27,16 @@ button {
   border-style: solid;
   transition: transform 0.1s;
 }
+
 button:hover {
   background: var(--button-hovered-color);
 }
+
 button:active {
   transform: scale(0.98);
   background: var(--button-pressed-color);
 }
+
 p {
   color: white;
   font-size: 25px;
@@ -40,14 +47,6 @@ p {
   padding: 10px 10px;
   border-width: 2px;
   background: var(--element-bg-color);
-}
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  height: 100vh;
-  background: var(--bg-color);
 }
 
 @keyframes undo-flash {
@@ -91,21 +90,20 @@ p {
   width: 5%;
 }
 
-#slider-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width:100%
-}
-
 #slider {
   width: 80%; /* This will make the slider take up the full width of its container */
 }
 
+#options-container button {
+  margin-top: 10px;
+}
+
+#hu-side-button {
+  background: var(--default-side-button-selected-color);
+
+}
+
 #card-div {
-  display: flex;
-  justify-content: center;
   width: 100%;
   min-height: 25%;
   word-wrap: break-word;
@@ -113,7 +111,31 @@ p {
   perspective: 1000px;
 }
 
-#actions-div {
+.folder-button {
+  background: var(--folder-bg-color);
+  font-size:30px;
+}
+
+.folder-button:hover {
+  background: var(--folder-hover-color);
+}
+
+.folder-button:active {
+  background: var(--folder-pressed-color);
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.flex-row button {
+  width:22%
+}
+
+.flex-column {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -121,30 +143,10 @@ p {
   width: 100%;
 }
 
-.folder-div {
-  width:100%;
-  display:flex;
-  flex-direction: column;
-}
-.folder-button {
-  background: var(--folder-bg-color);
-  font-size:30px;
-}
-.folder-button:hover {
-  background: var(--folder-hover-color);
-}
-.folder-button:active {
-  background: var(--folder-pressed-color);
-}
-
-.danger-div {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.danger-div button {
-  width: 22%;
+.container {
+  justify-content: flex-start;
+  height: 100vh;
+  background: var(--bg-color);
 }
 
 .menu-button {
@@ -164,7 +166,6 @@ p {
   transform: scale(0.95);
 }
 
-
 #card-button {
   width: 100%;
   height: 100%;
@@ -172,9 +173,6 @@ p {
   position: relative;
   transition: ease-in-out 0.35s;
   transform-style: preserve-3d;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: visible;
 }
 
@@ -198,9 +196,6 @@ p {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #card-button p {
@@ -217,4 +212,8 @@ p {
 
 #card-button.flipped .back {
   color: white;
+}
+
+.no-top-margin {
+  margin-top: 0;
 }

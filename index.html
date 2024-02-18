@@ -11,18 +11,25 @@
 
 <body>
   <script src="https://cdn.jsdelivr.net/npm/nouislider@14.6.3/distribute/nouislider.min.js"></script>
-  <div id="slider-container">
-    <p>Válaszd ki, hogy mennyi szót akarsz megtanulni!<br>Ha van már mentett állásod ehhez a paklihoz, akkor majd nyomd
-      meg a <strong>reset</strong> gombot!</p>
-    <div id="slider"></div>
-    <p><span id="sliderValue1"></span> - <span id="sliderValue2"></span></p>
-    <div class="danger-div">
+  <div id="options-container" class="flex-column">
+    <div class="flex-row">
       <button class="action-button" id="accept-button">✓</button>
       <div class="spacer"></div>
       <button class="action-button" id="unselect-button">↤</button>
     </div>
+    <p>Válaszd ki, hogy mennyi szót akarsz megtanulni!<br>Ha van már mentett állásod ehhez a paklihoz, akkor majd nyomd
+      meg a <strong>reset</strong> gombot!</p>
+    <div id="slider"></div>
+    <p><span id="sliderValue1"></span> - <span id="sliderValue2"></span></p>
+    <div>
+      <p>Melyik oldal legyen az alapértelmezett oldal (amire rákérdez)?</p>
+      <div class="flex-column">
+        <button class="action-button" id="hu-side-button">Előlap</button>
+        <button class="action-button" id="en-side-button">Hátlap</button>
+      </div>
+    </div>
   </div>
-  <div class="container" id="menu-container"></div>
+  <div class="container flex-column" id="menu-container"></div>
   <script src="menu.js"></script>
 </body>
 

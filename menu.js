@@ -1,14 +1,14 @@
 function startGame() {
-  window.location.href = 'game.html?deck=' + encodeURIComponent(selectedDeck) + '&start=' + Math.floor(slider.noUiSlider.get()[0]) + '&end=' + Math.floor(slider.noUiSlider.get()[1])
+  window.location.href = 'game.html?deck=' + encodeURIComponent(selectedDeck) + '&start=' + Math.floor(slider.noUiSlider.get()[0]) + '&end=' + Math.floor(slider.noUiSlider.get()[1]) + '&defaultSide=' + defaultSide
 }
 
 function unselect() {
-  sliderContainer.style.display = 'none'
+  optionsContainer.style.display = 'none'
   menuContainer.style.display = 'flex'
 }
 
 function select() {
-  sliderContainer.style.display = 'flex'
+  optionsContainer.style.display = 'flex'
   menuContainer.style.display = 'none'
   len = getDeckLength(selectedDeck).then(len => {
     slider.noUiSlider.updateOptions({
@@ -67,23 +67,25 @@ var value1 = document.getElementById('sliderValue1');
 var value2 = document.getElementById('sliderValue2');
 var decksPath = 'https://raw.githubusercontent.com/ricsirogi/Flashcards/main/decks/'
 
+let defaultSide = 'hu'
 let menuContainer = document.getElementById('menu-container')
 let selectedDeck = ''
-let sliderContainer = document.getElementById('slider-container')
+let optionsContainer = document.getElementById('options-container')
 let acceptButton = document.getElementById('accept-button')
 let unselectButton = document.getElementById('unselect-button')
+let huSideButton = document.getElementById('hu-side-button')
+let enSideButton = document.getElementById('en-side-button')
 
 function makeButtons(inputDeck, parent, indentWidth) {
   inputDeck.forEach((deck) => {
     if (Array.isArray(deck)) {
-      console.log("array detected")
       let folderContainer = document.createElement('div')
       let folderButton = document.createElement('button')
       let folderElementsContainer = document.createElement('div')
 
-      folderContainer.className = 'folder-div'
+      folderContainer.className = 'flex-column'
       folderButton.className = 'folder-button menu-button'
-      folderElementsContainer.className = 'folder-div'
+      folderElementsContainer.className = 'flex-column'
 
       folderContainer.style.marginLeft = indentWidth + '%'
       folderContainer.style.width = 100 - indentWidth + '%'
@@ -136,7 +138,17 @@ slider.noUiSlider.on('update', function (values, handle) {
   }
 });
 
-sliderContainer.style.display = 'none'
+huSideButton.addEventListener('click', () => {
+  defaultSide = 'hu'
+  huSideButton.style.backgroundColor = 'var(--default-side-button-selected-color)'
+  enSideButton.style.backgroundColor = 'var(--element-bg-color)'
+})
+enSideButton.addEventListener('click', () => {
+  defaultSide = 'en'
+  enSideButton.style.backgroundColor = 'var(--default-side-button-selected-color)'
+  huSideButton.style.backgroundColor = 'var(--element-bg-color)'
+})
+optionsContainer.style.display = 'none'
 
 acceptButton.onclick = startGame
 unselectButton.onclick = unselect

@@ -33,7 +33,8 @@ In the future I plan to add more formats, with the goal of making the format cus
 
 ## TODO
 
-- [ ] Make the default side customizeable
+- [ ] Add option to randomize the side the card get showed to you (off by default)
+- [ ] Add option to automatically reset the deck when selecting it, so the user doesn't have to do it manually (off by default)
 - [ ] When reshuffling, make it optional to exclude the know-deck
 - [ ] make it so reading the deck from the txt file is more versitile, so the user doesn't have to use the format of _one word one line_
 - [ ] make it so the card animates when know or not-know button is clicked: if know, then it goes away, if not know, it goes to the back of the deck
@@ -41,6 +42,7 @@ In the future I plan to add more formats, with the goal of making the format cus
 - [ ] add a button to listen to the word
 - [ ] Make tests for the words so the user can guess the word from multiple choices
 - [ ] make it so I can send a notification to everyone currently using the website to ask them to reload, because I changed stuff
+- [x] Make the default side customizeable (hu-side by default (the one that' the 'key' to the 'value'))
 - [x] fix the issue where the contents are not exactly in the middle, and there's just empty space on the right and at the bottom
 - [x] Make folders for the words so they're not all spat out at one place
 - [x] Make a color flash animation for undoing

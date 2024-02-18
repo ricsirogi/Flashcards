@@ -193,7 +193,7 @@ async function loadData() {
       }
       huWord = uppercaseFirstLetter(hungarizeWord(data[i]))
       enWord = uppercaseFirstLetter(data[i + 1])
-      allCards.push(new Card(huWord, enWord, 'hu'))
+      allCards.push(new Card(huWord, enWord, deckDefaultSide))
 
     }
 
@@ -286,6 +286,7 @@ let params = new URLSearchParams(window.location.search)
 let deckName = params.get('deck')
 let startNum = params.get('start') - 1 // -1 because uh indexes
 let endNum = params.get('end') - 1
+let deckDefaultSide = params.get('defaultSide')
 const language = deckName.split('_')[deckName.split('_').length - 1]
 
 let cardButton = document.getElementById('card-button')

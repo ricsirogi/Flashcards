@@ -9,19 +9,19 @@
 </head>
 
 <body>
-  <div class="container" id="game-container">
-    <p id="progress-indicator" class="">0/0</p>
-    <div id="card-div">
-      <button id="card-button">
-        <div class="front">_</div>
-        <div class="back">_</div>
+  <div class="container flex-column" id="game-container">
+    <p id="progress-indicator" class="no-top-margin">0/0</p>
+    <div id="card-div" class="flex-row">
+      <button id="card-button" class="flex-row">
+        <div class="front flex-row">_</div>
+        <div class="back flex-row">_</div>
       </button>
     </div>
-    <div id="actions-div">
+    <div class="flex-column">
       <button class="action-button" id="know-button">✓</button>
       <button class="action-button" id="not-know-button">X</button>
       <button class="action-button" id="undo-button">⎌</button>
-      <div class="danger-div">
+      <div class="flex-row">
         <button class="action-button" id="back-button">↤</button>
         <div class="spacer"></div>
         <button class="action-button" id="reset-button">↺</button>
