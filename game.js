@@ -156,7 +156,6 @@ function uppercaseFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1)
 }
 
-// animate is a boolean, if true, the card will be flipped with an animation
 function defaultCard() {
   // toggle the flip animation, if the card was flipped
   flip = currentCard.default()
@@ -273,6 +272,7 @@ function nextCard(knowornot) {
   }
 
   console.log('to', currentCard.getWords()[0])
+
   // Flash the card with the appropriate color and then change the card
   let flashDuration = 0.25
   cardFlash(knowornot, flashDuration)
@@ -333,6 +333,7 @@ notKnowButton.addEventListener('click', () => nextCard('not-know'))
 undoButton.addEventListener('click', () => {
   // only add currentCard back into the deck, if it's not null, and the deck it would pull back from is not empty
   if (!currentCard || lastPress.length === 0) {
+    // if we're undoing something that happened after the last shuffle, then we need to load the state before the shuffle
     if (deck.length !== initialDeckLength - 1 && deck.length == totalDeckLength - 1) {
       let backup = undoBackup.pop().loadBackup()
       deck = backup[0]
@@ -361,10 +362,13 @@ undoButton.addEventListener('click', () => {
     return
   }
 
-  lastPress.pop()
-  changeCardText(currentCard.getWords())
-
-  updateProgress()
+  let flashDuration = 0.25
+  cardFlash('undo', flashDuration)
+  setTimeout(() => {
+    lastPress.pop()
+    changeCardText(currentCard.getWords())
+    updateProgress()
+  }, flashDuration * 1000)
 })
 
 function backToMenu() {

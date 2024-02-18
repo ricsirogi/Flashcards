@@ -3,6 +3,9 @@
   --element-bg-color: rgb(0, 5, 162);
   --button-hovered-color: rgb(0, 5, 150);
   --button-pressed-color: rgb(0, 5, 140);
+  --folder-bg-color: rgb(183, 119, 0);
+  --folder-hover-color: rgb(163, 99, 0);
+  --folder-pressed-color: rgb(143, 89, 0);
 }
 * {
   font-family: Consolas;
@@ -10,7 +13,34 @@
 body {
   background-color: var(--bg-color);
 }
-
+button {
+  background: var(--element-bg-color);
+  font-size: 50px;
+  color: white;
+  padding: 10px 2px;
+  border-radius: 10px;
+  border-color: black;
+  border-style: solid;
+  transition: transform 0.1s;
+}
+button:hover {
+  background: var(--button-hovered-color);
+}
+button:active {
+  transform: scale(0.98);
+  background: var(--button-pressed-color);
+}
+p {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: black;
+  padding: 10px 10px;
+  border-width: 2px;
+  background: var(--element-bg-color);
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -18,6 +48,19 @@ body {
   justify-content: flex-start;
   height: 100vh;
   background: var(--bg-color);
+}
+
+@keyframes undo-flash {
+  0% {
+    background: var(--element-bg-color);
+  }
+  50% {
+    background: rgb(180, 180, 180);
+  }
+  100% {
+    background: var(--element-bg-color);
+  }
+
 }
 
 @keyframes not-know-flash {
@@ -53,7 +96,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
   width:100%
 }
 
@@ -76,7 +118,23 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 600px;
+  width: 100%;
+}
+
+.folder-div {
+  width:100%;
+  display:flex;
+  flex-direction: column;
+}
+.folder-button {
+  background: var(--folder-bg-color);
+  font-size:30px;
+}
+.folder-button:hover {
+  background: var(--folder-hover-color);
+}
+.folder-button:active {
+  background: var(--folder-pressed-color);
 }
 
 .danger-div {
@@ -89,28 +147,9 @@ body {
   width: 22%;
 }
 
-button {
-  background: var(--element-bg-color);
-  font-size: 50px;
-  
-  color: white;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border-color: black;
-  border-style: solid;
-  transition: transform 0.1s;
-}
-button:hover {
-  background: var(--button-hovered-color);
-}
-button:active {
-  transform: scale(0.98);
-  background: var(--button-pressed-color);
-}
 .menu-button {
   margin-top: 30px;
   width: 100%;
-  height: 100%;
   font-size: 30px;
   word-wrap: break-word;
   hyphens: auto;
@@ -124,17 +163,7 @@ button:active {
 .action-button:active {
   transform: scale(0.95);
 }
-p {
-  color: white;
-  font-size: 25px;
-  margin-bottom: 20px;
-  border-style: solid;
-  border-radius: 10px;
-  border-color: black;
-  padding: 10px 10px;
-  border-width: 2px;
-  background: var(--element-bg-color);
-}
+
 
 #card-button {
   width: 100%;

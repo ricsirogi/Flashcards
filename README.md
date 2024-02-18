@@ -33,18 +33,17 @@ In the future I plan to add more formats, with the goal of making the format cus
 
 ## TODO
 
-- [ ] make it so I can send a notification to everyone currently using the website to ask them to reload, because I changed stuff
-- [ ] Fix a bug where the progress bar doesn't display stuff properly after starting a new pack (I think; idk how to replicate)
-- [ ] Make a color flash animation for undoing (?)
-- [ ] Make folders for the words so they're not all spat out at one place
-- [ ] Make tests for the words so the user can guess the word from multiple choices
 - [ ] Make the default side customizeable
 - [ ] When reshuffling, make it optional to exclude the know-deck
 - [ ] make it so reading the deck from the txt file is more versitile, so the user doesn't have to use the format of _one word one line_
 - [ ] make it so the card animates when know or not-know button is clicked: if know, then it goes away, if not know, it goes to the back of the deck
 - [ ] make low data usage mode where I try to limit the fetch requests as much as possible (for example when selecting how many words to learn, instead of getting the length of the deck, just use percentages)
-- [ ] fix the issue where the contents are not exactly in the middle, and there's just empty space on the right and at the bottom
 - [ ] add a button to listen to the word
+- [ ] Make tests for the words so the user can guess the word from multiple choices
+- [ ] make it so I can send a notification to everyone currently using the website to ask them to reload, because I changed stuff
+- [x] fix the issue where the contents are not exactly in the middle, and there's just empty space on the right and at the bottom
+- [x] Make folders for the words so they're not all spat out at one place
+- [x] Make a color flash animation for undoing
 - [x] make it so the user can chose how many words to learn
 - [x] make a program that reads the decks in the decks folder so I can just copy it and paste it into the js
 - [x] make a program that checks the txt file and notifies if there are odd number of lines or there's an italan word ending with e (so I can check if I wrote the article [névelő] for it), and other things maybe
@@ -56,4 +55,3 @@ In the future I plan to add more formats, with the goal of making the format cus
 - [x] make it so the card is flipped to its 'hu' side when an action button is pressed or when it get's displayed (because otherwise, if I put it into the not-know deck, when it comes up again, it will be flipped to the wrong side)
 - [x] have some sort of indication that all the words have been learned
 - [x] make it so when pressing the tick or the x button, the card turns green or red for a brief moment with a nice animation
-
