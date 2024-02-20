@@ -32,34 +32,45 @@ function getDeckLength(deck) {
     .catch(error => console.error(error));
 }
 
+const deckFolders = {
+  'a_scuola': [
+    'A scuola', 'a_scuola_part1_it', 'a_scuola_part2_it', 'a_scuola_part3_it', 'i_soggetti_it'
+  ],
+}
+
 var listOfDecs = [
+  ['bevezető szavak',
+    deckFolders.a_scuola,
+    'napi_rutin_it',
+    'tempo_libero_it'],
   ['tételek',
     'olasz_tv_multimedia_it',
     'olasz_tetel_tema_8_1tol_10ig_szavak_it',
     'la salute e il corpo umano_it',],
   ['ünnepek',
-    'haloween_ognisanti_it',],
+    'haloween_ognisanti_it',
+    'natale_nuovo_anno_epifania_HAMAROSAN_it'],
   ['rendhagyó igék',
     'rendhagyo_futuro_semplice_it',
-    'rendhagyo_passato_prossimo_it',],
-  ['könnyebb olasz szavak',
+    'rendhagyo_passato_prossimo_it',
+    'rendhagyo_imperfetto_HAMAROSAN_it'],
+  ['olasz témakörök',
+    'napi_rutin_it',
     'al_bar_it',
     'tempo_libero_it',
-    'napi_rutin_it',],
-  ['olasz témakörök',
-    'il_social_media_it',
-    'idojaras_it',
+    deckFolders.a_scuola,
     'la_famiglia_it',
     'la_casa_it',
+    'idojaras_it',
+    'il_social_media_it',
     'i_cibi_it',
+    'frasi_per_esprimere_opinioni_it',
     'olasz ruhak_it',
     'i_animali_it',],
   ['tankönyv szavak',
-    'unita11_plus_pagina_85_it',
-  ],
+    'unita11_plus_pagina_85_it'],
   ['angol szavak',
-    'angol_szavak_en',
-  ],
+    'angol_szavak_en'],
   'test_en',]
 
 var slider = document.getElementById('slider');

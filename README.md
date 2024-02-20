@@ -33,6 +33,7 @@ In the future I plan to add more formats, with the goal of making the format cus
 
 ## TODO
 
+- [ ] Display a message when the selected deck is not found
 - [ ] Add option to randomize the side the card get showed to you (off by default)
 - [ ] Add option to automatically reset the deck when selecting it, so the user doesn't have to do it manually (off by default)
 - [ ] When reshuffling, make it optional to exclude the know-deck

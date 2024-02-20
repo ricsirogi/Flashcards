@@ -1,0 +1,30 @@
+Pont
+Punto
+Vessző
+Virgola
+Pontos vessző
+Punto e virgola
+Kettőspont
+Due punti
+Kérdőjel
+Punto interrogativo
+Felkiáltójel
+Punto esclamativo
+Nyílt zárójel ‘(‘
+Aperta parentesi
+Zárt zárójel ‘)’
+Chiusa parentesi
+Zárójelek között
+Fra parentesi
+Idézőjel
+Virgolette
+Hármaspont ‘…’
+Puntini di sospensione
+Kötőjel
+Trattino
+Aposztróf
+Apostrofo
+Véghangsúlyos
+Accento grave
+Kukac
+Chiocciola
