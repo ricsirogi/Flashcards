@@ -32,7 +32,7 @@ function getDeckLength(deck) {
     .catch(error => console.error(error));
 }
 
-const deckFolders = {
+const deckFolders = { // for folders that appear more than onece
   'a_scuola': [
     'A scuola', 'a_scuola_part1_it', 'a_scuola_part2_it', 'a_scuola_part3_it', 'i_soggetti_it'
   ],
@@ -68,6 +68,9 @@ var listOfDecs = [
     'olasz ruhak_it',
     'i_animali_it',],
   ['tankönyv szavak',
+    'unita_introduttiva_it',
+    'unita_1_it',
+    'unita_6_it',
     'unita11_plus_pagina_85_it'],
   ['angol szavak',
     'angol_szavak_en'],
