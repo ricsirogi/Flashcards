@@ -92,6 +92,7 @@ let acceptButton = document.getElementById('accept-button')
 let unselectButton = document.getElementById('unselect-button')
 let huSideButton = document.getElementById('hu-side-button')
 let enSideButton = document.getElementById('en-side-button')
+let manualCheckerButton = document.getElementById('manual-checker-button')
 
 function makeButtons(inputDeck, parent, indentWidth) {
   inputDeck.forEach((deck) => {
@@ -170,3 +171,6 @@ optionsContainer.style.display = 'none'
 acceptButton.onclick = startGame
 unselectButton.onclick = unselect
 
+manualCheckerButton.addEventListener('click', () => {
+  window.location.href = 'manual_deck_check.html'
+})
