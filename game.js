@@ -380,7 +380,7 @@ function backToMenu() {
 backButton.addEventListener('click', () => {
   if (currentCard) {
     saveState()
-    if (confirm('Are you sure you want to go back? Your progress will be saved.')) {
+    if (confirm('Biztos hogy vissza ki akarsz lépni? A játék állása el lesz mentve.')) {
       backToMenu()
     }
   } else {
@@ -389,7 +389,7 @@ backButton.addEventListener('click', () => {
 })
 
 resetButton.addEventListener('click', () => {
-  if (!currentCard || confirm('Are you sure you want to reset the game? All progress will be lost.')) {
+  if (!currentCard || confirm('Biztos hogy újra akarod kezdeni? A játék jelenlegi állása törölve lesz.')) {
     localStorage.removeItem(deckName + 'gameState')
     window.removeEventListener('beforeunload', confirmExit)
     window.location.reload()

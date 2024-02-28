@@ -59,7 +59,6 @@ p {
   100% {
     background: var(--element-bg-color);
   }
-
 }
 
 @keyframes not-know-flash {
@@ -100,7 +99,6 @@ p {
 
 #hu-side-button {
   background: var(--default-side-button-selected-color);
-
 }
 
 #card-div {
@@ -111,9 +109,12 @@ p {
   perspective: 1000px;
 }
 
+.smaller-text {
+  font-size: 20px;
+}
 .folder-button {
   background: var(--folder-bg-color);
-  font-size:30px;
+  font-size: 30px;
 }
 
 .folder-button:hover {
@@ -132,7 +133,7 @@ p {
 }
 
 .flex-row button {
-  width:22%
+  width: 22%;
 }
 
 .flex-column {
@@ -216,4 +217,26 @@ p {
 
 .no-top-margin {
   margin-top: 0;
+}
+
+button.auto-width {
+  width: auto;
+}
+
+.full-height {
+  height: 100%;
+}
+
+input,
+textarea {
+  font-size: 25px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 10px 10px;
+  border-width: 2px;
+}
+
+textarea {
+  font-size: 15px;
 }

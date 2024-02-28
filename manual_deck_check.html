@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Manuális szókártya ellenőrző</title>
+</head>
+
+<body>
+    <div class="flex-column container" name="deck-input-container">
+        <textarea name="deck-input" id="deck-input" cols="40" rows="30"
+            placeholder="Illessze be a szókártya szövegét ide"></textarea>
+        <button class="action-button">Tovább</button>
+    </div>
+    <div class="flex-column container" name="deck-check-container">
+        <div class="flex-column">
+            <p style="text-align:center">
+                - magyar -<br>
+                <span name="hu-word">Felöltözik</span>
+                <br>-------------<br>
+                <span name="it_word">Vestirsi</span>
+                <br> - olasz -
+            </p>
+        </div>
+        <p class="smaller-text">Magyar oldal változtatás:</p>
+        <input type="text" value="Felöltözik">
+        <p class="smaller-text">Olasz oldal változtatás:</p>
+        <input type="text" value="Vestirsi">
+        <div class="flex-row">
+            <button class="action-button">⎌</button>
+            <div class="spacer"></div>
+            <button class="action-button auto-width">Tovább</button>
+        </div>
+    </div>
+    <div class="flex-column container" name="changes-copy-container">
+        <p>Változtatások</p>
+        <div class="flex-column">
+            <p>
+                <span>Magyar</span>
+                -
+                <span style="color:greenyellow">Olasz</span>
+            </p>
+            <div class="flex-row">
+                <button class="smaller-text full-height">X</button>
+                <div class="spacer"></div>
+                <button class="smaller-text full-height">✎</button>
+            </div>
+        </div><!--! Write html for editing a change here -->
+        <div class="flex-column">
+            <p>
+                <span style="color:greenyellow">Magyar</span>
+                -
+                <span>Olasz</span>
+            </p>
+            <div class="flex-row">
+                <button class="smaller-text full-height">X</button>
+                <div class="spacer"></div>
+                <button class="smaller-text full-height">✎</button>
+            </div>
+        </div>
+        <div class="flex-column">
+            <p>
+                <span>Magyar</span>
+                -
+                <span style="color:greenyellow">Olasz</span>
+            </p>
+            <div class="flex-row">
+                <button class="smaller-text full-height">X</button>
+                <div class="spacer"></div>
+                <button class="smaller-text full-height">✎</button>
+            </div>
+        </div>
+        <div class="flex-column">
+            <p>
+                <span>Magyar</span>
+                -
+                <span style="color:greenyellow">Olasz</span>
+            </p>
+            <div class="flex-row">
+                <button class="smaller-text full-height">X</button>
+                <div class="spacer"></div>
+                <button class="smaller-text full-height">✎</button>
+            </div>
+        </div>
+        <button class="action-button smaller-text">Visszaállítás</button>
+        <button class="action-button">Másolás</button>
+    </div>
+</body>
+
+</html>
