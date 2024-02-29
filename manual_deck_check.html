@@ -10,83 +10,52 @@
 
 <body>
     <div class="flex-column container" name="deck-input-container">
-        <textarea name="deck-input" id="deck-input" cols="40" rows="30"
+        <textarea name="deck-input" id="deck-input-field" cols="40" rows="30"
             placeholder="Illessze be a szókártya szövegét ide"></textarea>
-        <button class="action-button">Tovább</button>
+        <button class="action-button smaller-text" id="choose-from-existing-decks-button">Kiválasztás a
+            meglévőkből</button>
+        <button class="action-button" id="jump-to-deck-check-button">Tovább</button>
     </div>
-    <div class="flex-column container" name="deck-check-container">
-        <div class="flex-column">
+    <div class="flex-column container hidden" name="deck-check-container">
+        <div class="flex-column" id="card-display-div">
             <p style="text-align:center">
                 - magyar -<br>
-                <span name="hu-word">Felöltözik</span>
+                <span id="hu-word-display">Alma</span>
                 <br>-------------<br>
-                <span name="it_word">Vestirsi</span>
+                <span id="it-word-display">La mela</span>
                 <br> - olasz -
             </p>
         </div>
         <p class="smaller-text">Magyar oldal változtatás:</p>
-        <input type="text" value="Felöltözik">
+        <input type="text" id="hu-word-input" value="Alma">
         <p class="smaller-text">Olasz oldal változtatás:</p>
-        <input type="text" value="Vestirsi">
+        <input type="text" id="it-word-input" value="La mela">
         <div class="flex-row">
             <button class="action-button">⎌</button>
             <div class="spacer"></div>
-            <button class="action-button auto-width">Tovább</button>
+            <button class="action-button auto-width" id="next-card-button">Tovább</button>
         </div>
     </div>
-    <div class="flex-column container" name="changes-copy-container">
-        <p>Változtatások</p>
-        <div class="flex-column">
-            <p>
-                <span>Magyar</span>
-                -
-                <span style="color:greenyellow">Olasz</span>
-            </p>
-            <div class="flex-row">
-                <button class="smaller-text full-height">X</button>
-                <div class="spacer"></div>
-                <button class="smaller-text full-height">✎</button>
-            </div>
-        </div><!--! Write html for editing a change here -->
-        <div class="flex-column">
-            <p>
-                <span style="color:greenyellow">Magyar</span>
-                -
-                <span>Olasz</span>
-            </p>
-            <div class="flex-row">
-                <button class="smaller-text full-height">X</button>
-                <div class="spacer"></div>
-                <button class="smaller-text full-height">✎</button>
-            </div>
-        </div>
-        <div class="flex-column">
-            <p>
-                <span>Magyar</span>
-                -
-                <span style="color:greenyellow">Olasz</span>
-            </p>
-            <div class="flex-row">
-                <button class="smaller-text full-height">X</button>
-                <div class="spacer"></div>
-                <button class="smaller-text full-height">✎</button>
-            </div>
-        </div>
-        <div class="flex-column">
-            <p>
-                <span>Magyar</span>
-                -
-                <span style="color:greenyellow">Olasz</span>
-            </p>
-            <div class="flex-row">
-                <button class="smaller-text full-height">X</button>
-                <div class="spacer"></div>
-                <button class="smaller-text full-height">✎</button>
+    <div class="flex-column container hidden" name="changes-copy-container">
+        <div name="changes-display-container">
+            <p style="text-align:center">Változtatások</p>
+            <div class="flex-column">
+                <div class="flex-row">
+                    <p>HU</p>
+                    <input type="text" value="Alma">
+                </div>
+                <div class="flex-row">
+                    <p>IT</p>
+                    <input type="text" value="La mela">
+                </div>
+                <button class="">Kész</button>
             </div>
         </div>
         <button class="action-button smaller-text">Visszaállítás</button>
         <button class="action-button">Másolás</button>
     </div>
+    <script src="loadData.js"></script>
+    <script src="manualDeckCheck.js"></script>
 </body>
 
 </html>

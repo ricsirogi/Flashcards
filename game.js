@@ -124,23 +124,6 @@ function confirmExit(e) {
   e.returnValue = ''
 }
 
-function hungarizeWord(word) {
-  // for a while when I was writing the words file, I didn't know why python was displaying the hungarian characters wrong
-  // so I used these to replace the characters with the correct ones
-  // now I don't need them, but I'll keep them here for a while
-  word = word.replace(/o:(?!:)/g, 'ö')
-  word = word.replace(/u:(?!:)/g, 'ü')
-  word = word.replace(/o'(?!')/g, 'ó')
-  word = word.replace(/o"(?!")/g, 'ő')
-  word = word.replace(/u'(?!')/g, 'ú')
-  word = word.replace(/u"(?!")/g, 'ű')
-  word = word.replace(/e'(?!')/g, 'é')
-  word = word.replace(/a'(?!')/g, 'á')
-  word = word.replace(/i'(?!')/g, 'í')
-
-  return word
-}
-
 function shuffleCards(baseDeck) {
   newDeck = []
   var len = baseDeck.length
@@ -152,60 +135,13 @@ function shuffleCards(baseDeck) {
   return newDeck
 }
 
-function uppercaseFirstLetter(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1)
-}
+
 
 function defaultCard() {
   // toggle the flip animation, if the card was flipped
   flip = currentCard.default()
   if (flip) {
     cardButton.classList.toggle('flipped')
-  }
-}
-
-async function loadData() {
-  try {
-    let response = await fetch('https://raw.githubusercontent.com/ricsirogi/Flashcards/main/decks/' + deckName + '.txt')
-    let data = await response.text()
-
-    //* create all the cards
-    data = data.split('\n')
-
-    // remove all stray newline characters from the end of data
-    while (data[data.length - 1] === '\n' || data[data.length - 1] === '') {
-      data.pop()
-    }
-
-    // check if the number of lines in the file is even
-    if (data.length % 2 !== 0) {
-      console.error('The number of lines in the file is not even.' + '\n' + data)
-      console.log('this is the last', data[data.length - 1])
-      return
-    }
-
-    allCards = []
-    for (let i = 0; i < data.length; i = i + 2) {
-      if (i < startNum * 2) {
-        continue
-      } else if (i > endNum * 2) {
-        break
-      }
-      huWord = uppercaseFirstLetter(hungarizeWord(data[i]))
-      enWord = uppercaseFirstLetter(data[i + 1])
-      allCards.push(new Card(huWord, enWord, deckDefaultSide))
-
-    }
-
-    totalDeckLength = allCards.length
-    initialDeckLength = allCards.length
-
-    // shuffle the cards and put them into the deck
-    shuffleCards(allCards).forEach((element) => {
-      deck.push(element)
-    })
-  } catch (error) {
-    console.error('Error:', error)
   }
 }
 
