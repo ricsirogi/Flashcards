@@ -19,7 +19,7 @@ Lingua straniera
 Természettudomány
 Le scienze naturali
 Tanulmányok
-Studio
+Gli studi
 Komolyan
 Sul serio
 Előkészített
@@ -55,7 +55,7 @@ Bastare
 Azért mindent csak nem tudok megtanulni!
 Mica posso studiare tutto!
 Beugrom érted
-Ti passo a perdere
+Ti passo a prendere
 Átgondol, tart
 Considerare
 Kételkedés, szkepticizmus
