@@ -49,13 +49,31 @@ function addChangeDisplay(huWord, itWord, index) {
             </p>
             <div class="flex-row">
                 <button class="smaller-text full-height" id="remove-change-${index}">X</button>
-                <div class="spacer"></div>
-                <button class="smaller-text full-height" id="edit-change-${index}">✎</button>
             </div>
         </div>
     `
-    console.log(changeDisplay)
     changesDisplaySection.innerHTML += changeDisplay
+}
+
+function skipToChangesCopy(force = false) {
+    if (allCards.length === 0 || force) {
+        saveChange()
+        deckCheckSection.classList.add('hidden')
+        changesCopySection.classList.remove('hidden')
+
+        for (let i = 0; i < changedCards.length; i++) {
+            addChangeDisplay(changedCards[i][0].hu, changedCards[i][0].en, i)
+            /*
+            let removeButton = document.getElementById(`remove-change-${i}`)
+
+            removeButton.addEventListener('click', ((i) => {
+                element = document.getElementById(`change-${i}`)
+                changesDisplaySection.removeChild(element)
+                console.log('remove clicked', i)
+            })(i))*/
+        }
+        return
+    }
 }
 
 let deckInputSection = document.getElementsByName('deck-input-container')[0]
@@ -75,6 +93,8 @@ let chooseFromExistingDecksButton = document.getElementById('choose-from-existin
 let jumpToDeckCheckButton = document.getElementById('jump-to-deck-check-button')
 
 let nextCardButton = document.getElementById('next-card-button')
+let skipToChangesCopyButton = document.getElementById('skip-to-changes-copy-button')
+
 let huWordDisplay = document.getElementById('hu-word-display')
 let itWordDisplay = document.getElementById('it-word-display')
 let huWordInput = document.getElementById('hu-word-input')
@@ -101,41 +121,30 @@ chooseFromExistingDecksButton.addEventListener('click', () => {
     })
 })
 
-jumpToDeckCheckButton.addEventListener('click', () => {
-    if (!existingDeckList.value) {
-
+jumpToDeckCheckButton.addEventListener('click', async () => {
+    if (!existingDeckList.value) { // if the user didn't select an existing deck, read the input field
+        deckInput = deckInputField.value
+    } else { // else, get the raw deck from the selected deck
+        deckName = existingDeckList.value // set deckName to the selected deck, so the loadData function can use it
+        deckInput = await loadData(undefined, true)
     }
-    deckInput = deckInputField.value ? !existingDeckList.value : existingDeckList.value
 
     deckInputSection.classList.add('hidden')
     deckCheckSection.classList.remove('hidden')
-    loadData().then((result) => {
+    loadData(deckInput).then((result) => { // input the raw deck into loadData, and it returns a list of Card objects
         allCards = result
-        console.log(allCards)
         currentCard = nextCard()
     })
 })
 
 nextCardButton.addEventListener('click', () => {
-    if (allCards.length === 0) {
-        saveChange()
-        deckCheckSection.classList.add('hidden')
-        changesCopySection.classList.remove('hidden')
-        console.log(changedCards, checkedCards)
-
-        for (let i = 0; i < changedCards.length; i++) {
-            addChangeDisplay(changedCards[i][0].hu, changedCards[i][0].en, i)
-            /*let removeButton = document.getElementById(`remove-change-${i}`)
-            let editButton = document.getElementById(`edit-change-${i}`)
-
-            removeButton.addEventListener('click', ((i) => {
-                element = document.getElementById(`change-${i}`)
-                changesDisplaySection.removeChild(element)
-                console.log('remove clicked', i)
-            })(i))*/
-        }
-        return
-    }
+    skipToChangesCopy()
     currentCard = nextCard()
+})
+
+skipToChangesCopyButton.addEventListener('click', () => {
+    if (confirm('Biztos, hogy átlépsz a változtatások másolásához?')) {
+        skipToChangesCopy(true)
+    }
 })
 

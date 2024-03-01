@@ -119,16 +119,8 @@ function uppercaseFirstLetter(string) {
 }
 
 async function listTxtFiles() {
-  const url = `https://api.github.com/repos/ricsirogi/Flashcards/contents/decks/allDecks.json`;
+  const url = `https://raw.githubusercontent.com/ricsirogi/Flashcards/master/decks/allDecks.json`;
   const response = await fetch(url);
   const files = await response.json();
-
-  const txtFiles = files.filter(file => file.name.endsWith('.txt'));
-  let deckList = []
-  for (const file of txtFiles) {
-    deckList.push(file.name.slice(0, -4))
-  }
-  return deckList
+  return files['decks']
 }
-
-listTxtFiles();
