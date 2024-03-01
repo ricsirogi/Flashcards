@@ -255,13 +255,6 @@ select, option {
   width:100%
 }
 
-#manual-checker-button {
-  position: absolute;
-  width: 50%;
-  font-size: 20px;
-  bottom: 0;
-}
-
 .hidden {
   display: none;
 }
