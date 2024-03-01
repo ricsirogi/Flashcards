@@ -237,7 +237,7 @@ button.auto-width {
 }
 
 input,
-textarea {
+textarea{
   font-size: 25px;
   border-color: black;
   border-style: solid;
@@ -248,6 +248,11 @@ textarea {
 
 textarea {
   font-size: 15px;
+}
+
+select, option {
+  font-size:15px;
+  width:100%
 }
 
 #manual-checker-button {

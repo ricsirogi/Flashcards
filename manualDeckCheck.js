@@ -63,8 +63,10 @@ let deckCheckSection = document.getElementsByName('deck-check-container')[0]
 let changesCopySection = document.getElementsByName('changes-copy-container')[0]
 let changesDisplaySection = document.getElementsByName('changes-display-container')[0]
 
-let deckInputField = document.getElementById('deck-input-field')
-let deckInput = ''
+let deckInputField = document.getElementById('deck-input-field') // the element that contains the manually added deck
+let deckInput = '' // a string that contains the name of the already existing deck which will be checked (selected with existingDeckList)
+let deckName = ''
+let existingDeckList = document.getElementById('existing-decks-list')
 let allCards = []
 let changedCards = [] // contains a list of this array: [card, diffString] (a diffstring is 'hu' or 'it' or 'huit')
 let checkedCards = []
@@ -79,14 +81,35 @@ let huWordInput = document.getElementById('hu-word-input')
 let itWordInput = document.getElementById('it-word-input')
 
 chooseFromExistingDecksButton.addEventListener('click', () => {
-    window.location.href = 'https://github.com/ricsirogi/Flashcards/tree/main/decks';
+    if (!existingDeckList.classList.contains('hidden')) { // return if the list is already visible
+        existingDeckList.classList.add('hidden')
+        while (existingDeckList.firstChild) {
+            existingDeckList.removeChild(existingDeckList.firstChild);
+        }
+        existingDeckList.value = ''
+        return
+    }
+
+    listTxtFiles().then((result) => {
+        existingDeckList.classList.remove('hidden')
+        result.forEach((deck) => {
+            let option = document.createElement('option')
+            option.value = deck
+            option.innerHTML = deck
+            existingDeckList.appendChild(option)
+        })
+    })
 })
 
 jumpToDeckCheckButton.addEventListener('click', () => {
-    deckInput = deckInputField.value
+    if (!existingDeckList.value) {
+
+    }
+    deckInput = deckInputField.value ? !existingDeckList.value : existingDeckList.value
+
     deckInputSection.classList.add('hidden')
     deckCheckSection.classList.remove('hidden')
-    loadData(deckInput).then((result) => {
+    loadData().then((result) => {
         allCards = result
         console.log(allCards)
         currentCard = nextCard()

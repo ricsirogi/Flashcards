@@ -1,0 +1,82 @@
+Tanszék, részleg, körzet, megye
+Il dipartimento
+Beiratkozás
+Iscrizione
+Gyakoriság
+La frequenza
+(írásbeli, szóbeli) vizsgák
+Le prove (scritte o orali)
+Felvételi vizsga
+Gli esami di ammissione
+Menza
+La mensa
+Egyetemi kar
+La facoltà (t.sz.: le facoltà)
+Bejárat
+L’ingresso
+Tervezett, előrelátott mennyiség
+Previsto
+Bölcsészettudományi Kar
+Facoltà di Lettere e Filosofia
+Italianisztika
+Italianistica
+Előre lát
+Prevedere
+Állami egyetem
+Università statale (f)
+Beiratkozási költség
+Le tasse di iscrizione
+Egyetemi hallgató
+Lo studente universitario
+Orvostudomány(i kar)
+(la Facoltà di) Medicina
+Fogászati(i tanszék)
+(la Facoltà di) Odontoiatria
+Mérnök(i kar)
+(la Facoltà di) Ingegneria
+Jogtudományi(i kar)
+(la Facoltà di) Giurisprudenza
+Építészet(i kar)
+(la Facoltà di) Architettura
+Pszichológia(i kar)
+(la Facoltà di) Psicologia
+Nyelv(i tanszékek)
+(la Facoltà di) Lingue
+Tankötelezettség (2)
+L’istruzione obbligatoria (f), la scuola dell’obbligo
+Időtartam
+La durata
+Oktatási program
+Il programma di studio (m!)
+Bölcsőde
+L’asilo nido
+Óvoda (3-6 éves korig)
+La scuola materna
+Általános iskola alsó tagozat (6-11 éves korig)
+La scuola primaria
+Felső tagozat (2)
+La scuola secondaria di primo grado, la scuola media
+Gimnázium (14-19 éves korig)
+Il liceo
+Szakközépiskola
+L’istituto tecnico
+Szakmunkásképző iskola
+L’istituto professionale
+Szakmai képzés és oktatás
+L’istruzione e formazione professionale (IFP)
+Felsőfokú szakmai képzés
+L’istruzione e formazione tecnica superiore (IFPS)
+Művészeti/zenei/táncművészeti főiskolai képzés
+L’alta formazione artistica/musicale/coreutica (AFAM)
+Fordító- és tolmácsképző intézet
+La scuola superiore per mediatori linguistici
+Felsőfokú műszaki iskola
+L’istituto tecnico superiore
+A felső tagozat első osztálya
+La prima media (11 éves korban)
+Középiskolai bizonyítvány
+Licenza media
+A gimnázium első osztálya (14 éves korban)
+La prima superiore
+Érettségi bizonyítvány
+La diploma di maturità

@@ -38,7 +38,7 @@ const deckFolders = { // for folders that appear more than onece
   ],
 }
 
-var listOfDecs = [
+var listOfDecs = [ //! add new decks to decks/allDecks.json as well!!!
   ['bevezető szavak',
     deckFolders.a_scuola,
     'napi_rutin_it',
@@ -74,7 +74,14 @@ var listOfDecs = [
     'pi1b_unita_6_it',
     'pi1b_unita11_plus_pagina_85_it',],
   ['progretto 2a szavak',
-    'pi2a_unita_1a_it',],
+    ['unita 1',
+      'pi2a_unita_1_full_it',
+      'pi2a_unita_1a_it',
+      'pi2a_unita_1b-d_it',
+      'pi2a_unita_1e_it',
+      'pi2a_unita_1f_part1_it',
+      'pi2a_unita_1f_part2_it',],
+  ],
   ['angol szavak',
     'angol_szavak_en'],
   'test_en',]
@@ -92,7 +99,13 @@ let acceptButton = document.getElementById('accept-button')
 let unselectButton = document.getElementById('unselect-button')
 let huSideButton = document.getElementById('hu-side-button')
 let enSideButton = document.getElementById('en-side-button')
-let manualCheckerButton = document.getElementById('manual-checker-button')
+let manualCheckerButton = document.createElement('button')
+manualCheckerButton.id = 'manual-checker-button'
+manualCheckerButton.style.width = '99%'
+manualCheckerButton.style.marginLeft = '2%'
+manualCheckerButton.style.marginRight = '2%'
+manualCheckerButton.className = 'menu-button'
+manualCheckerButton.innerHTML = 'Manuális ellenőrző'
 
 function makeButtons(inputDeck, parent, indentWidth) {
   inputDeck.forEach((deck) => {
@@ -136,6 +149,7 @@ function makeButtons(inputDeck, parent, indentWidth) {
       parent.appendChild(button)
     }
   })
+  parent.appendChild(manualCheckerButton)
 }
 makeButtons(listOfDecs, menuContainer, 0)
 

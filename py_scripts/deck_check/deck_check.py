@@ -5,6 +5,9 @@ If the deck is italian, checks if all nouns ending with e have an article before
 Removes empty lines from the end
 And maybe others as well
 The program also allows you to modify the word, so you can write in the article or make exceptions for specific words
+
+You shouldn't use this because it changes non utf-8 characters to undefined and idk how to fix it and i dont wanna :c
+and also it just doesn't read the files now
 """
 import os
 import glob
@@ -237,7 +240,7 @@ def check_diff(deck_name:str):
                     print(f"Original: {original_lines[i]}Modified: {modified_lines[i]}")
 
 current_dir = os.path.dirname(__file__)
-root_dir = os.path.dirname(current_dir)
+root_dir = os.path.dirname(os.path.dirname(current_dir))
 decks_dir = os.path.join(root_dir, "decks")
 
 deck_names = glob.glob(os.path.join(decks_dir, '*.txt'))

@@ -38,15 +38,20 @@ class Card {
   }
 }
 
-async function loadData(inputDeck) {
+async function loadData(inputDeck, returnRaw = false) {
   let data = {}
+
   if (inputDeck === undefined) {
     try {
       let response = await fetch('https://raw.githubusercontent.com/ricsirogi/Flashcards/main/decks/' + deckName + '.txt')
       data = await response.text()
+      if (returnRaw) {
+        return data
+      }
     } catch (error) {
       console.error('Error:', error)
     }
+
     //* create all the cards
     data = data.split('\n')
   }
@@ -112,3 +117,18 @@ function hungarizeWord(word) {
 function uppercaseFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1)
 }
+
+async function listTxtFiles() {
+  const url = `https://api.github.com/repos/ricsirogi/Flashcards/contents/decks/allDecks.json`;
+  const response = await fetch(url);
+  const files = await response.json();
+
+  const txtFiles = files.filter(file => file.name.endsWith('.txt'));
+  let deckList = []
+  for (const file of txtFiles) {
+    deckList.push(file.name.slice(0, -4))
+  }
+  return deckList
+}
+
+listTxtFiles();
