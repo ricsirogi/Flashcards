@@ -177,15 +177,6 @@ p {
   overflow: visible;
 }
 
-@media (orientation: landscape) {
-  #card-button {
-    width: 30%;
-    min-width: 300px;
-  }
-  .action-button {
-    width: 50%;
-  }
-}
 
 #card-button.flipped {
   transform: rotateX(180deg);
@@ -236,6 +227,11 @@ button.auto-width {
   margin-right: 5%;
 }
 
+.small-side-padding {
+ padding-left: 5%;
+ padding-right: 5%;
+}
+
 input,
 textarea{
   font-size: 25px;
@@ -264,4 +260,17 @@ select, option {
   overflow-wrap: break-word;
   word-break: break-all;
   hyphens: auto;
+}
+
+@media (orientation: landscape) {
+  #card-button {
+    width: 30%;
+    min-width: 300px;
+  }
+  .action-button {
+    width: 50%;
+  }
+  select {
+    width:50%
+  }
 }

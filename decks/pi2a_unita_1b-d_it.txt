@@ -20,8 +20,8 @@ Sem
 Neppure
 Zavart, szórakozott
 Distratto
-Rájön valamire
-Accorgersi di qualcosa
+Rájön valamire (2)
+Accorgersi di qualcosa, rendersi conto
 Viselkedés
 Il comportamento
 Néha
@@ -43,7 +43,7 @@ La donna incinta
 Letesz egy vizsgát
 Sostenere un esame
 A XVIII. század kevésbé ismert költői
-Poeti minori del Settecento
+I poeti minori del Settecento
 Fejezet
 Il capitolo
 Ajánl, szán
@@ -53,7 +53,7 @@ In realtá
 Félév
 Il semsetre
 Mű
-Opera
+l'opera
 Elküld
 Mandare via
 Üdvözlő üzenet
@@ -102,7 +102,7 @@ Kaparós sorsjegy
 Il Gratta e Vinci
 Kéz a kézben
 Mano nella mano
-Fütyül rá
+Fütyül rá (nem érdekli)
 Fregarsene
 Ismerős
 Il/la Conoscente
@@ -112,8 +112,6 @@ Sztrájk
 Lo sciopero
 Ajándékkártya
 Il biglietto omaggio
-Rájön valamire
-Rendersi conto
 Kiabál
 Sgridare
 Meglepetésszerűen

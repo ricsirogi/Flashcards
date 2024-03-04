@@ -16,6 +16,9 @@
             meglévőkből</button>
         <select id="existing-decks-list" class="hidden smaller-text"></select>
         <button class="action-button" id="jump-to-deck-check-button">Tovább</button>
+        <button class="action-button smaller-text hidden word-wrap" id="continue-to-deck-check-button">Folytatás ennél
+            a
+            paklinál:(DECKNAME)</button>
     </div>
     <div class="flex-column container hidden" name="deck-check-container">
         <div class="flex-column" id="card-display-div">
@@ -32,29 +35,22 @@
         <p class="smaller-text">Olasz oldal változtatás:</p>
         <input type="text" id="it-word-input" value="La mela">
         <div class="flex-row">
-            <button class="action-button">⎌</button>
+            <button class="action-button auto-width small-side-padding" id="undo-card-button">⎌</button>
             <div class="spacer"></div>
-            <button class="action-button auto-width" id="next-card-button">Tovább</button>
+            <button class="action-button auto-width small-side-padding" id="next-card-button">Tovább</button>
         </div>
         <button class="action-button" id="skip-to-changes-copy-button">Skip a végére</button>
+        <div class="spacer"></div>
+        <button class="action-button back-to-deck-input-button smaller-text">Vissza a bevitelhez</button>
     </div>
     <div class="flex-column container hidden" name="changes-copy-container">
         <div name="changes-display-container">
             <p style="text-align:center">Változtatások</p>
-            <div class="flex-column">
-                <div class="flex-row">
-                    <p>HU</p>
-                    <input type="text" value="Alma">
-                </div>
-                <div class="flex-row">
-                    <p>IT</p>
-                    <input type="text" value="La mela">
-                </div>
-                <button class="">Kész</button>
-            </div>
         </div>
-        <button class="action-button smaller-text">Visszaállítás</button>
-        <button class="action-button">Másolás</button>
+        <button class="action-button smaller-text" id="restore-button">Visszaállítás</button>
+        <button class="action-button" id="copy-button">Másolás</button>
+        <button class="action-button back-to-deck-input-button smaller-text">Vissza a bevitelhez</button>
+        <button class="action-button smaller-text" id="back-to-deck-check-button">Vissza az ellenőrzéshez</button>
     </div>
     <script src="loadData.js"></script>
     <script src="manualDeckCheck.js"></script>
