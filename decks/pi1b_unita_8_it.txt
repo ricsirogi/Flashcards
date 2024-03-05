@@ -1,0 +1,294 @@
+joghurt
+yogurt
+almák
+mele
+egyforma
+uguale
+kevesebb
+de meno
+körték
+pere
+banánok
+banane
+kalóriák
+calorie
+citromos
+al limone
+tessék, itt van
+eccola qui
+teljeskiőrlésű penne tészta
+penne integrali
+öröm
+gioia
+sajnálkozás
+rammarico
+csalódottság, nem tetszés
+disappunto
+névmás
+promoni diretti
+összetett igeidő
+tempi composti
+“ne” névmás
+pronome partitivo
+történelmi piacok
+mercati storici
+tojások
+uova
+csomag, kiszerelés
+confenzioni
+zacskók
+sacchetti
+még szerencse
+meno male
+kívülről, fejből
+a memoria
+meggyőzött
+mi ha convinto
+újra találkoztok
+rivedrete
+hazakísér
+accompagna
+dohányozni
+fumare
+liter
+litro
+de dühítő
+che rabbia
+a fenébe, a mindenit
+accidenti!
+meglepetés
+sorpresa
+a fene egye meg, a francba
+mannaggia
+tanulmányi ösztöndíj
+borsa di studio
+kíván, óhajt
+desidera
+tíz dekagramm
+etti
+legalább
+almeno
+kiló
+chilo
+egy pár
+un paio
+tucat
+dozzina
+egyetlen
+unica
+házasság
+matrimonio
+Spanyolország
+Spagna
+egy ilyen döntés
+una decisione del genere
+döntés, elhatározás
+decisione
+többi, maradék
+resto
+tud mindent mindenkiről
+sa tutto di tutti
+segíteni
+aiutare
+lead, átad
+consegnare
+fordítás
+traduzione
+lehangoltnak látlak
+ti vedo un po’ giù
+kedv
+umore
+elvigyelek?
+vuoi un passaggio?
+együttműködés
+collaborazione
+segítsek?
+vuoi una mano?
+segíthetek?
+posso essere d’aiuto?
+szükséged van valamire
+hai bisogno di
+színházi
+teatrale
+sarok
+angolo
+elfoglalt 
+occupata
+mindenképpen
+assolutamente
+ó tényleg, igaz
+ah, già
+feladat
+compito
+roston sült hal
+pesce alla griglia
+parkolni
+parcheggiare
+zöldség- és gyümölcsárus
+fruttivendolo
+rózsacsokor
+mazzo di rose
+gyógyszer
+medicina
+virágárus
+fioraio
+halárus
+pescivendolo
+pékség
+panetteria
+tároló, doboz
+concenitore
+tubus
+tubetto
+kis befőttesüveg
+vasetto
+konzervdoboz
+scatoletta
+csomag
+pacco
+fogkrém
+dentifricio
+lekvár
+marmellata
+tonhal
+tonno
+répatorta
+torta alle carote
+liszt
+farina
+élesztő
+lievito
+tasak, zsacskó
+bustina
+olaj
+olio
+hűtő
+frigorifero
+élelmiszerüzlet
+negozio di alimentari
+boltos, kereskedő
+negoziante
+reszelt sajt
+formaggio grattugiato
+káposzta
+cavolo
+saláta
+lattuga
+WC-papír
+carta igienica
+szokatlan, furcsa
+insolito
+pénztárca
+portafoglio
+élelmiszerek
+alimenti
+keleti
+orientale
+szardella
+acciughe
+fűszerek
+erbe aromatiche
+illatos növények 
+piante profumate
+palermóriak
+palermitani
+piac
+mercati all’aperto
+ruházat
+abbigliamento
+cipők
+calzature
+háztartási eszközök
+casalinghi
+kivéve
+tranne
+nagyon színes
+coloratissimo
+velenceiek
+veneziani
+látogatják
+frequentano
+érdekel
+ti interessa
+oltalom alatt álló eredetmegjelölés
+riconoscimento DOP
+Európai Unió
+Unione Europea
+ismertek
+conosciuti
+Pó-síkság
+pianura padana
+Bocaccio Dekameron
+Decameron di Boccaccio
+finom, ízletes
+delicato
+jóízű, finom
+gustoso
+kellemes
+piacevole
+ugyanakkor
+allo stesso tempo
+értékes
+preziosissimo
+energizáló
+energetico
+köszönhető, betudható
+dovuto
+folyamat
+processo
+érlelés
+stagionatura
+érés, élelés
+maturazione
+elérni, megkapni
+ottenere
+combok
+cosce
+térd
+ginocchio
+disznó, sertés
+maiale
+természetes
+genuino
+íz
+gusto
+nősténybivaly
+bufala
+tehén
+mucca
+megtaláljuk
+ritroviamo
+mediterrán étkezés
+dieta mediterranea
+Krisztus előtt
+a. C.
+Hannibál
+Annibale
+ajánlatos, jobb
+preferibile
+tárolni
+conservarla
+szobahőmérsékleten
+a temperatura ambiente
+használt
+é utilizzato
+író
+scrittore
+balzsamecet
+aceto balsamico
+juhsajt
+pecorino
+pisztácia
+pistacchio
+az én hibám
+è colpa mia
+hiba
+colpa
+hentes
+macellaio
+rész, epizód
+puntata
+gorgonzola sajt
+gorgonzola
+tökös ravioli (töltött tészta)
+ravioli di zucca
