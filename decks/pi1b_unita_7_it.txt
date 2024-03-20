@@ -1,0 +1,250 @@
+műfaj
+genere
+bűnügyi
+giallo/poliziesco
+horror
+orrore
+tekintve
+visto che
+láz
+febbre
+mindenekelőtt
+innanzitutto
+zavart
+confuso
+milyen értelemben?
+in che senso?
+komplikált
+complicata
+megjegyzések
+commenti
+furcsa
+strano
+fél
+metà
+szerelmes
+innamorata
+szellem
+fantasma
+gyilkos
+assassino
+emlékek
+ricordi
+egyetértés
+accordo
+egyet nem értés
+disaccordo
+kijelentő mód folyamatos múlt
+imperfetto indicativo
+előidejű múlt
+trapassato prossimo
+csönd
+silenzio
+olykor
+ogni tanto
+boldog
+felice
+miközben
+mentre
+jaj, istenem
+oddio
+virágcsokor
+mazzo di fiori
+oké
+vabbè
+ki tudja
+chissá
+szokások
+abitudini 
+egy adott pillanatban nem befejezett cselekvés
+azione non conclusa  in un momento preciso
+múltban egyidőben történő cselekvések
+azioni contemporanee al passato
+befejezett cselekvés
+azione conclusa
+egymást követő befejezett cselekvés
+azioni successive concluse
+múltbeli cselekvés melyet egy másik múltbeli cselekvés szakított meg
+azioni passata interrotta  da un'altra azione passata
+körbe
+in cerchio
+sötét
+buia
+esős
+piovosa
+megpörgeti az üveget
+fa girare la bottiglia
+filctoll
+pennarello
+jelölt
+indicato
+megy előre
+va avanti
+észrevettem
+ho notato
+nadrág
+pantaloni
+póló
+maglietta
+ideges
+nervoso
+nem volt sok ember
+non c'era molta gente in giro
+üres, kihalt
+deserta
+türelmetlenek
+impazienti
+Pisai ferde torony
+Torre pendente 
+tragédia
+tragedia
+így, aztán
+quindi
+néhány nappal korábban
+qualche giorno prima
+nem volt nagy szám
+non era un granché
+szóval nincs film?
+allora niente film?
+sem
+neppure
+mégis
+eppure
+kritikák
+critiche
+immár
+ormai
+kritikák²
+recensioni
+képezzük
+si forma?
+négyzetek
+riquardi
+nagyon ügyes
+bravissimo
+rendezés
+regia
+igaz
+ragione
+színésznő
+attrice
+biztosan
+sicuramente
+szabadon
+liberamente
+borító
+copernita
+Teljesen Idegenek ( film)
+Perfetti Sconosciuti
+cím
+titolo
+cselekmény
+trama
+sajtó
+stampa
+reklám
+pubblicità
+megható
+emozionanti
+bemutatottak
+presentati
+filmzene
+colonna sonora
+elismertek
+apprezzati
+neorealizmus
+neorealismo
+második világháború
+Seconda guerra mondiale 
+időszak
+periodo
+filmmel kapcsolatos
+cinematografico
+olasz komédia
+commedia all'italiana
+viccesek
+comiche
+irónia
+ironia
+valamivel szemben
+nei confronti di
+társadalom
+società
+elődadottak
+interpretati
+kísérve
+accompagnati
+zeneszerző
+compositore
+híres
+noto
+megjutalmazottak
+premiati
+költői
+poetiche
+melankólikusak
+malinconiche 
+részlet
+tratto
+regény
+romanzo
+tiszteltek
+ammirati
+karrier
+carriera
+mesterművek
+capolavori
+képvisel
+rappresenta
+olyan filmek amelyek tükrözik a szerző személyiségét
+cinema d'autore
+szerző
+autore
+interpreti
+szereplők
+tehetség
+talento
+komikus
+comici
+herceg
+principe
+nevetés
+risata
+átlag olasz
+italiano medio
+előnyös tulajdonság
+pregi
+hiba
+difetti
+szakmailag
+professionalmente
+tulajdonságok
+caratteristiche
+pozitívak
+positive
+negatívak
+negative
+említsetek
+citate
+akikkel találkoztatok
+incontrati
+töltsétek ki
+compilate
+drámaiak
+drammatici
+átmentem az úton
+attraversavo la strada
+átmentem
+attraversavo
+Mit játszanak az Arisonban?
+Cosa danno all'Arison
+elütöttek egy biciklivel
+mi ha investito una bicicletta
+ezúttal nem dőlök be!
+stavolta non ci casco! 
+kilátás
+panorami
+ajándék
+gratis
+játszák,vetítik
+proiettano
