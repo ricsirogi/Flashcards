@@ -1,0 +1,98 @@
+autószerelő
+il meccanico
+szabó
+il sarto
+tanár
+l’insegnante
+kőműves
+il muratore
+orvos
+il medico
+sofőr
+l’autista
+szakács
+il cuoco
+földműves
+il contadino
+alkalmazott
+l’impiegato
+ápoló
+l’infermiere
+kertész
+il giardiniere
+állatorvos
+il veterinario
+fodrász
+il parucchiere
+cipész
+il calzolaio
+menedzser
+il manager
+orvos
+il dottore
+tűzoltó
+il pompiere
+kerékpározó
+il ciclista
+asztalos
+il falegname
+benzinkutas
+il benzinaio
+mosogató
+il lavapiatti
+pincér
+il cameriere
+építészmérnök
+l’architetto
+újságíró
+il giornalista
+alkalmazott
+l’impiegato
+kardiológus
+il cardiologo
+diabetológus
+il dietologo
+fogorvos
+il dentista
+parkolóőr
+il parcheggiatore
+karosszérialakatos
+il carrozziere
+autószerelő
+il meccanico
+postás
+il postino
+vízvezetékszerelő
+l’idraulico
+gyümölcsárus
+il fruttivendolo
+villanyszerelő
+l’elettricista
+énekes
+il cantante
+titkár
+il segretario
+csendőr
+il carabiniere
+igazgató
+il direttore
+pilóta
+il pilota
+eladó
+il commesso
+festő
+il pittore
+rendőr
+il poliziotto
+szobafestő
+l’imbianchino
+gyógyszerész
+il farmacista
+kereskedő
+il commercialista
+ügyvéd
+l’avvocato
+bíró
+il giudice
+kézbesítő
+il fattorino

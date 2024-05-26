@@ -156,7 +156,7 @@ function nextCard(knowornot) {
     undoBackup.push(new Backup([...deck], backupLearnedDeck, backupNotLearnedDeck, currentCard, [...lastPress], totalDeckLength))
 
     // if the deck is empty, then the game is over, start over with the not learned cards
-    deck = shuffleCards(notLearnedDeck)
+    deck = shuffleMode ? shuffleCards(notLearnedDeck) : notLearnedDeck.reverse()
     learnedDeck = []
     notLearnedDeck = []
     totalDeckLength = deck.length
@@ -183,7 +183,8 @@ let params = new URLSearchParams(window.location.search)
 let deckName = params.get('deck')
 let startNum = params.get('start') - 1 // -1 because uh indexes
 let endNum = params.get('end') - 1
-let deckDefaultSide = params.get('defaultSide')
+let defaultSide = params.get('defaultSide')
+let shuffleMode = params.get('shuffleMode') === 'true'
 const language = deckName.split('_')[deckName.split('_').length - 1]
 
 let cardButton = document.getElementById('card-button')

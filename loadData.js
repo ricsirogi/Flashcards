@@ -82,7 +82,7 @@ async function loadData(inputDeck, returnRaw = false) {
     }
     huWord = uppercaseFirstLetter(hungarizeWord(data[i]))
     enWord = uppercaseFirstLetter(data[i + 1])
-    allCards.push(new Card(huWord, enWord, 'hu'))
+    allCards.push(new Card(huWord, enWord, defaultSide))
   }
 
   if (inputDeck !== undefined) {
@@ -93,9 +93,17 @@ async function loadData(inputDeck, returnRaw = false) {
   initialDeckLength = allCards.length
 
   // shuffle the cards and put them into the deck
-  shuffleCards(allCards).forEach((element) => {
-    deck.push(element)
-  })
+  if (shuffleMode) {
+    console.log("shuffled")
+    shuffleCards(allCards).forEach((element) => {
+      deck.push(element)
+    })
+  } else {
+    console.log("Didnt shuffle")
+    allCards.reverse().forEach((element) => {
+      deck.push(element)
+    })
+  }
 }
 
 function hungarizeWord(word) {
@@ -114,6 +122,7 @@ function hungarizeWord(word) {
 
   return word
 }
+
 function uppercaseFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1)
 }

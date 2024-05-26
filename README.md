@@ -44,6 +44,8 @@ In the future I plan to add more formats, with the goal of making the format cus
 - [ ] add a button to listen to the word
 - [ ] Make tests for the words so the user can guess the word from multiple choices
 - [ ] make it so I can send a notification to everyone currently using the website to ask them to reload, because I changed stuff
+- [x] fix bug where the manual check straight up doesn't show up at all after tapping the button on mobile
+- [x] add option to disable shuffling
 - [x] Make the default side customizeable (hu-side by default (the one that' the 'key' to the 'value'))
 - [x] fix the issue where the contents are not exactly in the middle, and there's just empty space on the right and at the bottom
 - [x] Make folders for the words so they're not all spat out at one place

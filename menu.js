@@ -1,5 +1,5 @@
 function startGame() {
-  window.location.href = 'game.html?deck=' + encodeURIComponent(selectedDeck) + '&start=' + Math.floor(slider.noUiSlider.get()[0]) + '&end=' + Math.floor(slider.noUiSlider.get()[1]) + '&defaultSide=' + defaultSide
+  window.location.href = 'game.html?deck=' + encodeURIComponent(selectedDeck) + '&start=' + Math.floor(slider.noUiSlider.get()[0]) + '&end=' + Math.floor(slider.noUiSlider.get()[1]) + '&defaultSide=' + defaultSide + '&shuffleMode=' + shuffleMode
 }
 
 function unselect() {
@@ -55,6 +55,7 @@ var listOfDecs = [ //! add new decks to decks/allDecks.json as well!!! (use prin
     'rendhagyo_passato_prossimo_it',
     'rendhagyo_imperfetto_HAMAROSAN_it'],
   ['olasz témakörök',
+    'professioni_mestieri_it',
     'napi_rutin_it',
     'al_bar_it',
     'tempo_libero_it',
@@ -97,6 +98,7 @@ var value2 = document.getElementById('sliderValue2');
 var decksPath = 'https://raw.githubusercontent.com/ricsirogi/Flashcards/main/decks/'
 
 let defaultSide = 'hu'
+let shuffleMode = true
 let menuContainer = document.getElementById('menu-container')
 let selectedDeck = ''
 let optionsContainer = document.getElementById('options-container')
@@ -104,6 +106,10 @@ let acceptButton = document.getElementById('accept-button')
 let unselectButton = document.getElementById('unselect-button')
 let huSideButton = document.getElementById('hu-side-button')
 let enSideButton = document.getElementById('en-side-button')
+let yesShuffleButton = document.getElementById('yes-shuffle-button')
+yesShuffleButton.style.backgroundColor = 'var(--default-side-button-selected-color)'
+let noShuffleButton = document.getElementById('no-shuffle-button')
+
 let manualCheckerButton = document.createElement('button')
 manualCheckerButton.id = 'manual-checker-button'
 manualCheckerButton.style.width = '99%'
@@ -186,6 +192,18 @@ enSideButton.addEventListener('click', () => {
   huSideButton.style.backgroundColor = 'var(--element-bg-color)'
 })
 optionsContainer.style.display = 'none'
+
+yesShuffleButton.addEventListener('click', () => {
+  shuffleMode = true
+  yesShuffleButton.style.backgroundColor = 'var(--default-side-button-selected-color)'
+  noShuffleButton.style.backgroundColor = 'var(--element-bg-color)'
+})
+
+noShuffleButton.addEventListener('click', () => {
+  shuffleMode = false
+  noShuffleButton.style.backgroundColor = 'var(--default-side-button-selected-color)'
+  yesShuffleButton.style.backgroundColor = 'var(--element-bg-color)'
+})
 
 acceptButton.onclick = startGame
 unselectButton.onclick = unselect
