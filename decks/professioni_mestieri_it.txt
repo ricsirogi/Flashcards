@@ -1,5 +1,3 @@
-autószerelő
-il meccanico
 szabó
 il sarto
 tanár
@@ -46,8 +44,6 @@ il cameriere
 l’architetto
 újságíró
 il giornalista
-alkalmazott
-l’impiegato
 kardiológus
 il cardiologo
 diabetológus
@@ -96,3 +92,67 @@ bíró
 il giudice
 kézbesítő
 il fattorino
+pincér
+il/la cameriere/a
+építőmérnök
+l’architetto (m/f)
+eladó
+il/la commesso/a
+földműves
+il/la contadino/a
+igazgató
+il direttore / la direttrice
+nővér
+il/la infermiere/a
+mérnök
+L’ingegnere
+informatikus
+L’informatico
+gépész, gépkocsi szerelő
+il meccanico
+tanár
+L’insegnante
+munkás
+il/la operaio/a
+postás
+il/la postino/a
+titkár
+il/la segretario/a
+rendező
+il regista
+légiutas kísérő (2)
+lo steward / la hostess & L’assistente di volo
+polgármester
+il sindaco
+fényképész
+il/la fotografo/a
+kutató
+il ricercatore/ la ricercatrice
+jégkrém készítő
+il gelataio
+nem tudtam kiolvasni 2. képen
+sarho?!
+fordító
+il traduttore / la traduttrice
+fodrász
+il parrucchiere
+programozó
+il programmatore
+vállalkozó
+l’imprenditore / l’imprenditrice
+író
+lo scrittore
+csapos
+il barista
+szenátor
+il senatore
+zenész
+il musicista
+virágárus
+il fiorista
+taxisofőr
+il tassista
+nem tudom kiolvasni 3. Képen
+La grida mistica ?!
+sofőr
+L’autista
