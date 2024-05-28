@@ -1,11 +1,9 @@
 szabó
 il sarto
-tanár
-l’insegnante
 kőműves
 il muratore
-orvos
-il medico
+orvos (2)
+il medico; il dottore
 sofőr
 l’autista
 szakács
@@ -20,14 +18,10 @@ kertész
 il giardiniere
 állatorvos
 il veterinario
-fodrász
-il parucchiere
 cipész
 il calzolaio
 menedzser
 il manager
-orvos
-il dottore
 tűzoltó
 il pompiere
 kerékpározó
@@ -40,8 +34,6 @@ mosogató
 il lavapiatti
 pincér
 il cameriere
-építészmérnök
-l’architetto
 újságíró
 il giornalista
 kardiológus
@@ -70,8 +62,6 @@ titkár
 il segretario
 csendőr
 il carabiniere
-igazgató
-il direttore
 pilóta
 il pilota
 eladó
@@ -92,14 +82,8 @@ bíró
 il giudice
 kézbesítő
 il fattorino
-pincér
-il/la cameriere/a
 építőmérnök
 l’architetto (m/f)
-eladó
-il/la commesso/a
-földműves
-il/la contadino/a
 igazgató
 il direttore / la direttrice
 nővér
@@ -114,10 +98,6 @@ tanár
 L’insegnante
 munkás
 il/la operaio/a
-postás
-il/la postino/a
-titkár
-il/la segretario/a
 rendező
 il regista
 légiutas kísérő (2)
@@ -152,5 +132,3 @@ taxisofőr
 il tassista
 Idegenvezető
 La guida turistica
-sofőr
-L’autista
