@@ -55,6 +55,7 @@ var listOfDecs = [ //! add new decks to decks/allDecks.json as well!!! (use prin
     'rendhagyo_passato_prossimo_it',
     'rendhagyo_imperfetto_HAMAROSAN_it'],
   ['olasz témakörök',
+    'soldi_e_lavoro_mini_it',
     'professioni_mestieri_it',
     'közmondások_it',
     'napi_rutin_it',
