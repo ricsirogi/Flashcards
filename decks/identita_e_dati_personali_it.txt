@@ -1,0 +1,154 @@
+nascere
+születik
+indirizzo (m)
+lakcím
+codice (m) postale
+postai irányítószám
+croato, -a
+horvát
+origine (f)
+származás
+nazionalità (f)
+nemzetiség
+paterno,-a
+apai
+cittadinanza
+állampolgárság
+doppio,-a
+kettős
+Celibe
+nőtlen
+divorziato,-a
+elvált
+nubile
+hajadon
+separato,-a
+különélő
+sposato, -a
+házas
+stato (m) civile
+családi állapot
+vedovo,-a
+Özvegy
+professione (f)
+foglalkozás
+universitario,-a
+egyetemi
+scuola () dell'obbligo
+általános iskola
+scuola (f) materna
+óvoda
+l'esame (m) di maturità
+érettségi vizsga
+l'anno (m) scorso
+tavaly
+quest’anno
+idén
+università (f)
+egyetem
+chiamare qcn
+hív vkit vhogyan
+diminutivo (m)
+becenév (kicsinyítő)
+vezzeggiativo (m)
+becenév
+inventare
+kitalál
+soprannome (m)
+ragadványnév
+carta (f) di identità
+személyi igazolvány
+certificato (m) di residenza
+lakcímigazolvány
+patente (f) di guida
+vezetői engedély
+codice (m) fiscale
+adóazonosító jel
+tessera sanitaria
+TB kártya
+tessera (f) studentesca
+diákigazolvány
+qualsiasi
+bármely, bármilyen
+attraversare qc
+átmegy, keresztülmegy vmin
+bisogna
+szükséges vmit csinálni
+confine (m) interno
+belső határ
+conto (m) corrente
+folyószámla
+dimostrare
+tanúsít, igazol
+identità (f)
+személyazonosság
+pacco (m)
+csomag
+presentare
+bemutat
+raccomandata
+ajánlott
+ritirare
+átvesz, kivesz
+servizio (m)
+szolgáltatás
+servire qc a qcn
+kell vkinek, szükséges
+sufficiente
+elegendő
+compilare
+kitölt
+iscrizione (f)
+beiratkozás
+curriculum (m) vitae
+önéletrajz
+modulo
+űrlap
+dato
+adat
+recapito (m)
+elérhetőség
+indicare
+feltüntet
+A proposto
+Ha már itt tartunk
+anagrafico,-a
+anyakönyvi
+competenza
+képesség, készség
+comporsi di qc
+áll vmiből
+conoscenza
+ismeret, tudás
+esperienza
+tapasztalat
+essenziale
+lényeges
+formazione (f)
+képzés
+lavorativo,-a
+munka-
+parte (f)
+rész
+cognome (m)
+vezetéknév
+data
+dátum, időpont
+luogo (m)
+hely
+nascita
+születés
+biglietto da visita
+névjegykártya
+cartoncino (m)
+vékony kartonlap
+ditta
+cég
+generalmente
+általában
+principalmente
+elsősorban, leginkább
+trasmettere
+átad
+usare
+használ
