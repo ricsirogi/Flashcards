@@ -32,7 +32,7 @@ function getDeckLength(deck) {
     .catch(error => console.error(error));
 }
 
-const deckFolders = { // for folders that appear more than onece
+const deckFolders = { // for folders that appear more than once
   'a_scuola': [
     'A scuola', 'a_scuola_part1_it', 'a_scuola_part2_it', 'a_scuola_part3_it', 'i_soggetti_it'
   ],
