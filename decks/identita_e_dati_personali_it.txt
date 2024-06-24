@@ -1,154 +1,156 @@
-nascere
 születik
-indirizzo (m)
+nascere
 lakcím
-codice (m) postale
+l'indirizzo (m)
 postai irányítószám
-croato, -a
+il codice (m) postale
 horvát
-origine (f)
+croato, -a
 származás
-nazionalità (f)
+l'origine (f)
 nemzetiség
-paterno,-a
+la nazionalità (f)
 apai
-cittadinanza
+paterno,-a
 állampolgárság
-doppio,-a
+la cittadinanza
 kettős
-Celibe
+doppio,-a
 nőtlen
-divorziato,-a
+Celibe
 elvált
-nubile
+divorziato,-a
 hajadon
-separato,-a
+nubile
 különélő
-sposato, -a
+separato,-a
 házas
-stato (m) civile
+sposato, -a
 családi állapot
-vedovo,-a
+il stato (m) civile
 Özvegy
-professione (f)
+vedovo,-a
 foglalkozás
-universitario,-a
+la professione (f)
 egyetemi
-scuola () dell'obbligo
+universitario,-a
 általános iskola
-scuola (f) materna
+la scuola dell'obbligo
 óvoda
-l'esame (m) di maturità
+la scuola (f) materna
 érettségi vizsga
-l'anno (m) scorso
+l'esame (m) di maturità
 tavaly
-quest’anno
+l'anno (m) scorso
 idén
-università (f)
+quest’anno
 egyetem
-chiamare qcn
+la università (f)
 hív vkit vhogyan
-diminutivo (m)
+chiamare qcn
 becenév (kicsinyítő)
-vezzeggiativo (m)
+il diminutivo (m)
 becenév
-inventare
+il vezzeggiativo (m)
 kitalál
-soprannome (m)
+inventare
 ragadványnév
-carta (f) di identità
+il soprannome (m)
 személyi igazolvány
-certificato (m) di residenza
+la carta di identità
 lakcímigazolvány
-patente (f) di guida
+il certificato di residenza
 vezetői engedély
-codice (m) fiscale
+la patente (f) di guida
 adóazonosító jel
-tessera sanitaria
+il codice (m) fiscale
 TB kártya
-tessera (f) studentesca
+la tessera sanitaria
 diákigazolvány
-qualsiasi
+la tessera (f) studentesca
 bármely, bármilyen
-attraversare qc
+qualsiasi
 átmegy, keresztülmegy vmin
-bisogna
+attraversare qc
 szükséges vmit csinálni
-confine (m) interno
+bisogna
 belső határ
-conto (m) corrente
+il confine (m) interno
 folyószámla
-dimostrare
+il conto (m) corrente
 tanúsít, igazol
-identità (f)
+dimostrare
 személyazonosság
-pacco (m)
+la identità (f)
 csomag
-presentare
+il pacco (m)
 bemutat
-raccomandata
+presentare
 ajánlott
-ritirare
+raccomandata
 átvesz, kivesz
-servizio (m)
+ritirare
 szolgáltatás
-servire qc a qcn
+servizio (m)
 kell vkinek, szükséges
-sufficiente
+servire qc a qcn
 elegendő
-compilare
+sufficiente
 kitölt
-iscrizione (f)
+compilare
 beiratkozás
-curriculum (m) vitae
+la iscrizione (f)
 önéletrajz
-modulo
+il curriculum (m) vitae
 űrlap
-dato
+il modulo
 adat
-recapito (m)
+il dato
 elérhetőség
-indicare
+il recapito
 feltüntet
-A proposto
+indicare
 Ha már itt tartunk
-anagrafico,-a
+A proposto
 anyakönyvi
-competenza
+anagrafico,-a
 képesség, készség
-comporsi di qc
+la competenza
 áll vmiből
-conoscenza
+comporsi di qc
 ismeret, tudás
-esperienza
+la conoscenza
 tapasztalat
-essenziale
+l'esperienza
 lényeges
-formazione (f)
+essenziale
 képzés
-lavorativo,-a
+la formazione (f)
 munka-
-parte (f)
+lavorativo,-a
 rész
-cognome (m)
+la parte (f)
 vezetéknév
-data
+il cognome (m)
+keresztnév
+il forename
 dátum, időpont
-luogo (m)
+la data
 hely
-nascita
+il luogo (m)
 születés
-biglietto da visita
+nascita
 névjegykártya
-cartoncino (m)
+il biglietto da visita
 vékony kartonlap
-ditta
+il cartoncino (m)
 cég
-generalmente
+la ditta
 általában
-principalmente
+generalmente
 elsősorban, leginkább
-trasmettere
+principalmente
 átad
-usare
+trasmettere
 használ
+usare
