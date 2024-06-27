@@ -1,7 +1,7 @@
 születik
 nascere
 lakcím
-l'indirizzo (m)
+l'indirizzo
 postai irányítószám
 il codice (m) postale
 horvát
@@ -9,7 +9,7 @@ croato, -a
 származás
 l'origine (f)
 nemzetiség
-la nazionalità (f)
+la nazionalità
 apai
 paterno,-a
 állampolgárság
@@ -27,7 +27,7 @@ separato,-a
 házas
 sposato, -a
 családi állapot
-il stato (m) civile
+il stato civile
 Özvegy
 vedovo,-a
 foglalkozás
@@ -37,37 +37,41 @@ universitario,-a
 általános iskola
 la scuola dell'obbligo
 óvoda
-la scuola (f) materna
+la scuola materna
 érettségi vizsga
 l'esame (m) di maturità
 tavaly
-l'anno (m) scorso
+l'anno scorso
 idén
 quest’anno
 egyetem
-la università (f)
+la università
 hív vkit vhogyan
 chiamare qcn
 becenév (kicsinyítő)
-il diminutivo (m)
+il diminutivo
 becenév
-il vezzeggiativo (m)
-kitalál
+il vezzeggiativo
+feltalál
 inventare
 ragadványnév
 il soprannome (m)
 személyi igazolvány
 la carta di identità
+útlevél
+il passaporto
 lakcímigazolvány
 il certificato di residenza
 vezetői engedély
 la patente (f) di guida
 adóazonosító jel
 il codice (m) fiscale
+la tessera con il codice fiscale
+adókártya (?)
 TB kártya
 la tessera sanitaria
 diákigazolvány
-la tessera (f) studentesca
+la tessera studentesca
 bármely, bármilyen
 qualsiasi
 átmegy, keresztülmegy vmin
@@ -77,13 +81,13 @@ bisogna
 belső határ
 il confine (m) interno
 folyószámla
-il conto (m) corrente
+il conto corrente
 tanúsít, igazol
 dimostrare
 személyazonosság
-la identità (f)
+la identità
 csomag
-il pacco (m)
+il pacco
 bemutat
 presentare
 ajánlott
@@ -91,7 +95,7 @@ raccomandata
 átvesz, kivesz
 ritirare
 szolgáltatás
-servizio (m)
+il servizio
 kell vkinek, szükséges
 servire qc a qcn
 elegendő
@@ -137,13 +141,13 @@ il forename
 dátum, időpont
 la data
 hely
-il luogo (m)
+il luogo
 születés
 nascita
 névjegykártya
 il biglietto da visita
 vékony kartonlap
-il cartoncino (m)
+il cartoncino
 cég
 la ditta
 általában
