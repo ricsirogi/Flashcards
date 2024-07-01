@@ -78,7 +78,7 @@ Unalmas
 Noioso
 Egyetlen
 Unico
-Serdőlőkor
+Serdülőkor
 L’adolescenza
 Serdülő, tinédzser
 L’adolescente (f/m)
@@ -93,7 +93,7 @@ Comportarsi con qcn
 Konfliktusos
 Conflittuale
 Vki részéről
-Da parti di qcn
+Da parte di qcn
 Mindkettő
 Entrambi
 Időszak
@@ -184,8 +184,6 @@ Alkalom
 L’occasione (f)
 Cukrászda
 La pasticceria
-Ajándék
-Regalo
 Veszít
 Perdere
 Elfúj
@@ -207,7 +205,7 @@ Luce
 Töltött káposzta
 Cavolo ripieno
 Ajándék (2)
-Regalo, dono
+Il regalo, il dono
 Rossz
 Cattivo
 Jó
@@ -274,12 +272,10 @@ Tojás
 L’uovo (m), le uova (f, pl)
 Jókívánság
 L’augurio
-Szertartás
-La ceremonia
 Polgári
 Civile
 Köt
-Contarre
+Contrarre
 Pár
 La coppia
 Hiedelem
@@ -300,14 +296,14 @@ Jelent
 Rappresentare
 Egyházi, vallásos
 Religioso
-Szertartás, rítus
-Il rito
+Szertartás, rítus (2)
+Il rito, la ceremonia
 Kicserél
 Scambiare
 Szimbolizál
 Simboleggiare
-Egyesölés
-L’unione
+Egyesülés
+L’unione (f)
 Kijárat
 L’uscita
 Keresztelő
