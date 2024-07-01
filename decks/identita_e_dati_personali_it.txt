@@ -66,8 +66,8 @@ vezetői engedély
 la patente (f) di guida
 adóazonosító jel
 il codice (m) fiscale
-la tessera con il codice fiscale
 adókártya (?)
+la tessera con il codice fiscale
 TB kártya
 la tessera sanitaria
 diákigazolvány
@@ -136,8 +136,6 @@ rész
 la parte (f)
 vezetéknév
 il cognome (m)
-keresztnév
-il forename
 dátum, időpont
 la data
 hely

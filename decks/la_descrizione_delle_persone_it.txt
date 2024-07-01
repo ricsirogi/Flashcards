@@ -98,8 +98,6 @@ Piszkos
 Sporco
 Elhanyagolt, ápolatlan
 Trascurato
-Smink
-Trucco
 Nagyra becsül, értékel
 Apprezzare
 Van bátorsága arra hogy…
@@ -109,7 +107,7 @@ Essere capace di + inf
 Akaraterő
 La forza di volontà
 Akarat
-Volontà
+La volontà
 Nagylelkűség
 La generosità
 Becsületesség
@@ -252,14 +250,12 @@ Kifelé forduló
 Estroverso
 Kellemes, tetszetős
 Piacente
-Felismer
-Riconoscere
 Szellemes
 Spiritoso
 Szépérzék
 Senso estetico
 Magasság
-La altezza
+L'altezza
 Telt, húsos
 Carnoso
 Fesztelenség, könnyedség
@@ -288,8 +284,6 @@ Lebarnult
 Abbronzato
 Felsőbbrendűnek hiszi magát
 Credersi superiore a qcn
-Képes arra, hogy…
-Essere capace di + inf
 Csípő
 Il fianco
 Féltékeny

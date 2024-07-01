@@ -1,82 +1,320 @@
-feleség
-la moglie
-sógor
-il cognato
-keresztapa
-il padrino
-keresztanya
-la madrina
-házastársak
-i coniugi
-apa
-il padre
-fiú unoka
-il nipote
-vő
-il nuoro
-keresztgyerek
-il/la figlioccio/a
-gyerekek
-i figli
-mostoha apa
-il patrigno
-dédanya
-la bisnonna
-fiútestvér
-il fratello
-unokatestvérek
-i cugini
-nagybácsi
-lo zio
-unokatestvér
-il/la cugino/a
-szülők
-i genitori
-fiú mostohatestvér
-il fratellastro
-lánytestvér
-la sorella
-após
-il suocero
-testvérek
-i fratelli
-nagybácsi/nagynéni
-gli zii
-anya
-la madre
-gyerek
-il/la figlio/a
-mostoha anya
-la matrigna
-nagyszülők
-i nonni
-unoka
-il nipote
-lány féltestvér
-sorellastra
-férj
-il marito
-meny
-la nuora
-fiú féltestvér
-il fratellastro
-dédapa
-il bisnonno
-nagymama
-la nonna
-nagynéni
-la zia
-nagyapa
-il nonno
-anyós
-la suocera
-sógórnő
-la cognata
-lány mostohatestvér
-sorellastra
-lány unoka
-la nipote
-összeházasodni
-sposarsi
-témához tartozó fontos nyelvtani szabály
-családtag elé nem teszünk névelőt, csak bizonyos esetekben, pl többesszám (lei é mia soralle; lei sono le mie sorelle) KéRDEZD TANáRODAT
+Áll vkikből
+Essere composto da
+Család
+La Famiglia
+Fiútestvér
+Il fratello
+Báty
+Il fratello maggiore
+Idősebb
+Maggiore
+Fiatalabb
+Minore
+Lánytestvér
+La sorella
+Húg
+La sorella minore
+Anyai
+Materno
+Meghal
+Morire
+Nagymama
+Nonna
+Él vkivel
+Vivere con qcn
+Megértés
+La comprensione (f)
+Vmin alapul
+essere basato su qc
+családtag
+Il membro della famiglia
+Kapcsolat, viszony
+Il rapporto
+Kölcsönös
+Reciproco
+Megbecsülés
+La stima
+Háztartásbeli (anyuka)
+(madre) Casalinga
+Igyekszik vmit csinálni
+Cercare di + inf
+Más, különböző
+Diverso
+Létezik
+Esistere
+Boldog
+Felice
+Feleség
+La moglie
+Követ
+Seguire
+Sztereotípia
+Lo stereotipo
+Siker
+Il successo
+Segítik egymást
+Aiutarsi
+Megoszt
+Condividere
+Vigasztal
+Consolare
+Szórakozik
+Divertirsi
+Jó, ha van vkije
+È bello avere qcn
+Kötődnek egymáshoz
+Essere legati
+Egyke
+Il figlio unico
+Játszani
+Giocare
+Megtanul csinálni vmit
+Imparare a + inf
+Együtt
+Insieme
+Veszekszik
+Litigare
+Unalmas
+Noioso
+Egyetlen
+Unico
+Serdőlőkor
+L’adolescenza
+Serdülő, tinédzser
+L’adolescente (f/m)
+Felnőtt
+L’adulto, -a
+Ugyanakkor
+Allo stesso tempo
+Keserűség
+L’amarezza
+Viselkedik vkivel
+Comportarsi con qcn
+Konfliktusos
+Conflittuale
+Vki részéről
+Da parti di qcn
+Mindkettő
+Entrambi
+Időszak
+Il periodo
+Problémás
+Problematico
+Gyorsan
+Rapidamente
+Felfedez
+Scoprire
+Átvészel, túlél valamit
+Sopravvivere a qc
+Átalakul, megváltozik
+Trasformarsi
+Elválni
+Divorziare
+Tapasztalat
+L’esperienza
+Megfelelő, helyes
+Giusto
+Határ
+Il limite
+Érett
+Maturo
+Indok
+Il motivo
+Nyomás
+La pressione
+Kérdés, probléma
+La questione
+Téved
+Sbagliare
+Társadalmi
+Sociale
+Házasodik
+Sposarsi
+Megbetegszik
+Ammalarsi
+Idős
+Anziano
+Együttélés
+Convivenza
+Sütemény
+Il dolce
+Mese
+La favola
+Kezel 
+Gestire
+Vmi ellenére
+Nonostante qc
+Mesél
+Raccontare
+Gazdagság
+La ricchezza
+Helyzet
+La situazione
+Átad vkinek
+Trasmettere a qcn
+Rokon
+Il/la parente
+Ritkán
+Raramente
+Ugyanaz
+Stesso
+Szoros
+Stretto
+Látják egymást, találkoznak
+Vedersi
+Eljön meglátogatni vkit
+Venire a trovare qcn
+Közel vmihez/vkihez
+Vicino a qc/qcn
+Gyertya
+La candelina
+Beszélget, cseveg
+Chiacchierare
+Születésnap
+Il compleanno
+Ünnepel
+Festeggiare
+Jelentőség
+L’importanza
+Találkoznak egymással
+Incontrarsi
+Meghív
+Invitare
+Alkalom
+L’occasione (f)
+Cukrászda
+La pasticceria
+Ajándék
+Regalo
+Veszít
+Perdere
+Elfúj
+Soffiare
+Feldíszít
+Addobbare
+Meglátogat vkit
+Andare a trovare qcn
+Karácsonyfa
+L’albero di Natale
+Harang
+Campanello
+Csillagocska
+La stellina
+Gömböcske
+La pallina
+Díszfény
+Luce
+Töltött káposzta
+Cavolo ripieno
+Ajándék (2)
+Regalo, dono
+Rossz
+Cattivo
+Jó
+Buono
+Vacsorázik
+Cenare
+Templom
+La chiesa
+Elkezd csinálni vmit
+Iniziare a + inf
+Kezdet
+L’inizio
+Énekbe kezd
+Intonare
+Mise
+La messa
+Éjfél
+La mezzanotte
+Karácsony
+Il Natale
+Karácsonyi
+Natalizio
+Jelez
+Segnare
+Hang, csilingelés
+Il suono
+Szenteste
+La Vigilia di Natale
+Hallgat
+Ascoltare
+Koccint
+Fare il brindisi
+Boldog új évet kíván
+Fare gli auguri di buon anno
+Tűzijáték
+I fuochi d’artificio
+Sugároz
+Trasmettere
+Keresztény
+Cristiano
+Fonott kalács
+Il pane dolce pasquale
+Elterjedt
+Diffuso
+Festett
+Dipinto
+Összeolvad
+Fondersi con qc
+Pogány (melléknév)
+Pagano
+Cserébe
+In cambio di
+Húsvét
+La Pasqua
+Locsolkodás
+L’innaffiamento
+Kút
+Il pozzo
+Sonka
+Il prosciutto
+Meglocsol
+Spruzzare
+Tojás
+L’uovo (m), le uova (f, pl)
+Jókívánság
+L’augurio
+Szertartás
+La ceremonia
+Polgári
+Civile
+Köt
+Contarre
+Pár
+La coppia
+Hiedelem
+La credenza
+Jeggyűrű
+La fede
+Termékenység
+La fertilità
+Dob, szór
+Lanciare
+Házasság
+Il matrimonio
+Városháza
+Il municipio
+Nász-
+Nuziale
+Jelent
+Rappresentare
+Egyházi, vallásos
+Religioso
+Szertartás, rítus
+Il rito
+Kicserél
+Scambiare
+Szimbolizál
+Simboleggiare
+Egyesölés
+L’unione
+Kijárat
+L’uscita
+Keresztelő
+Il battesimo
+Eljegyzés
+Il fidanzamento ufficiale
+Temetés
+Il funerale
+Összegyűlnek
+Riunirsi
