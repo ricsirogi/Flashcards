@@ -44,6 +44,8 @@ var listOfDecs = [ //! add new decks to decks/allDecks.json as well!!! (use prin
     'napi_rutin_it',
     'tempo_libero_it'],
   ['tételek (zöld könyv)',
+    'abitazione_it',
+    'citta_o_campagna_it',
     'la_famiglia_it',
     'la_descrizione_delle_persone_it',
     'identita_e_dati_personali_it',
