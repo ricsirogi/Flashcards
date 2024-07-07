@@ -89,7 +89,7 @@ Rafforzare
 Immunrendszer
 Il sistema immunitario
 Esti égbolt
-Cielo notturno
+Il cielo notturno
 Szennyezés
 L’inquinamento
 Világító/szikrázó
@@ -97,7 +97,7 @@ Scintillante
 Jelzőlámpa
 Semaforo
 Utcai lámpa
-Lampione
+Il lampione (m!)
 Hold
 La Luna
 Több ezer csillag
@@ -108,10 +108,10 @@ Kigúnyol valakit
 Deridere qcn
 Megjelenés
 L’apparenza
-Bírságot ad
-Fa la multa
+Bírságot adni
+Fare la multa
 Biztonságérzet
-Senso di sicurezza
+Il senso di sicurezza
 Romlott/megvesztegethető
 Corrotte
 Bűncselekmény
@@ -120,7 +120,7 @@ Rablás
 Il furto
 Gyilkosság
 L’omicidio
-Közúti balesetek
+Közúti baleset
 L’incidente stradale (m)
 Ami …-ként jelenik meg
 Il che si traduce in… (pl. Uno studente che studia meno)
@@ -140,3 +140,11 @@ Felsorolni
 Elencare
 Tény
 Il fatto
+Fényszennyezés
+L'inquinamento luminoso
+Termeszteni
+Coltivare
+Irányítani
+Controllare
+Befektetni
+Investire
