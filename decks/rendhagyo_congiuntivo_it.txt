@@ -1,0 +1,46 @@
+andare
+vada, andiamo, andiate, vadano
+bere
+beva, beviamo, beviate, bevano
+dare
+dia, diamo, diate, diano
+dire
+dica, diciamo, diciate, dicano
+dovere
+debba, dobbiamo, dobbiate, debbano
+fare
+faccia, facciamo, facciate, facciano
+morire
+muoia, moriamo, moriate, muoiano
+piacere
+piaccia, piacciamo, piacciate, piacciano
+porre
+ponga, poniamo, poniate, pongano
+potere
+possa, possiamo, possiate, possano
+rimanere
+rimanga, rimaniamo, rimaniate, rimangano
+salire
+salga, saliamo, saliate, salgano
+sapere
+sappia, sappiamo, sappiate, sappiano
+scegliere
+scelga, scegliamo, scegliate, scelgano
+sedere
+sieda, sediamo, sediate, siedano
+stare
+stia, stiamo, stiate, stiano
+tenere
+tenga, teniamo, teniate, tengano
+togliere
+tolga, togliamo, togliate, tolgano
+tradurre
+traduca, traduciamo, traduciate, traducano
+udire
+oda, udiamo, udiate, odano
+uscire
+esca, usciamo, usciate, escano
+venire
+venga, veniamo, veniate, vengano
+volere
+voglia, vogliamo, vogliate, vogliano
