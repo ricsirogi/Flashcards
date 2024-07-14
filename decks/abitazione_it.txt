@@ -11,7 +11,7 @@ Annoiarsi
 Sportlétesítmény
 L’impianto sportivo
 Kulturális létesítmény
-La istituzione culturale
+L'istituzione culturale (f)
 Szervez
 Organizzare
 Kórház
@@ -59,7 +59,7 @@ Isolato
 Unalmas
 Noioso
 Munkalehetőség
-L’opportunità di lavoro
+L’opportunità di lavoro (f)
 Történik
 Succedere
 Hátrány
@@ -167,7 +167,7 @@ Il mobile (m)
 Praktikus
 Pratico
 Szőnyeg
-Il tappetto
+Il tappeto
 Szék
 La sedia
 Íróasztal
@@ -218,7 +218,7 @@ Konyhai robotgép
 Il robot da cucina
 Kenyérpirító
 Il tostapane (m)
-Kerámia
+Kerámia (főnév)
 La ceramica
 Kosár
 Il cestino
