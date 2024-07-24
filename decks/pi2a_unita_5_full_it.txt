@@ -9,7 +9,7 @@ Il/la salutista
 Egészséges életmód
 La vita sana
 Forma, erőnlét, kondíció
-Forma fisica
+La forma fisica
 Fanatikus
 Fanatico
 Nagyon lusta
@@ -49,7 +49,7 @@ La corsa
 Hasizmok
 Gli addominali
 Edzés
-Allenamento
+l'allenamento
 Butaság
 La bugia
 Leég, ciki helyzetbe kerül
@@ -68,8 +68,8 @@ Szerencsétlenség, baleset
 L’infortunio
 Versenyszellemű, versenyző
 Competitivo
-Elválni egymástól
-Sperarsi
+Elválni (nem házasság)
+Separarsi (da)
 Elbújni, eldugni
 Nascondere
 Színházi előadás
