@@ -9,9 +9,7 @@ import glob
 import os
 import json
 
-current_dir = os.path.dirname(__file__)
-root_dir = os.path.dirname(current_dir)
-decks_dir = os.path.join(root_dir, "decks")
+decks_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "decks")
 
 txt_files = glob.glob(decks_dir + "/*.txt")
 

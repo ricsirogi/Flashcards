@@ -147,14 +147,6 @@ let sectionTracker = 0 // keeps track of which section is currently displayed (u
 let deckCheckState = {} // stores the state of the deckCheckSection (the currentCard, the checkedCards, the changedCards, the currentCardNum, the changedLastCard)
 const defaultSide = 'hu'
 
-// If all 3 sections are hidden for some reason then unhide the first one
-// Though, for some reason it works fine without this code, but I'll leave it here just in case (it didn't work before)
-if (deckInputSection.classList.contains("hidden") &&
-    deckCheckSection.classList.contains("hidden") &&
-    changesCopySection.classList.contains("hidden")) {
-    deckInputSection.classList.remove("hidden")
-}
-
 let chooseFromExistingDecksButton = document.getElementById('choose-from-existing-decks-button')
 let jumpToDeckCheckButton = document.getElementById('jump-to-deck-check-button')
 let deckInputField = document.getElementById('deck-input-field') // the element that contains the manually added deck
@@ -370,6 +362,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 })
+
+// If all 3 sections are hidden for some reason then unhide the first one on refresh
+// Though, for some reason it works fine without this code, but I'll leave it here just in case (it didn't work before)
+window.onload = function () {
+    if (deckInputSection.classList.contains("hidden") &&
+        deckCheckSection.classList.contains("hidden") &&
+        changesCopySection.classList.contains("hidden")) {
+        deckInputSection.classList.remove("hidden")
+    }
+}
 
 document.addEventListener('beforeunload', () => {
     if (localStorage.getItem('section') === '1') {
