@@ -20,12 +20,10 @@ statisztikák
 le statistiche
 heti (rendszerességű)
 settimanali
-kárpótlásként
-in compenso
 edzeni
 allenarsi
 nemzeti női labdarúgó-válogatott
-nazionale di calcio femminile
+la nazionale di calcio femminile
 szokás
 l'abitudine (f)
 teljesen
@@ -37,7 +35,7 @@ gareggiare
 elérni vmit
 conseguire qc
 rivalizálás, versengés
-rivalità
+la rivalità
 ujjongás, szurkolás
 il tifo
 szenvedély
@@ -98,7 +96,7 @@ Pulóver/mez
 La maglia
 Első helyezett
 Il primo classificato
-Egy bicikliverseny neve
+Egy világhírű olasz bicikliverseny neve
 Il Giro d’Italia
 Bajnok
 Campione
@@ -109,11 +107,11 @@ l’atleta (m/f)
 Jó eredményeket elérni
 Conseguire ottimi risultati
 Atlétika
-L’atletica leggera
+L’atletica (leggera)
 Vízilabda
 La pallanuoto (f!)
 Megnyerni a bajnokságot
-Vincere lo scudetto
+Vincere i campionati
 Ez egy nagyon súlyos probléma
 Questo è un problema molto grave
 Az Olimpia
@@ -148,7 +146,7 @@ Rögbi
 Il rugby
 Jéghoki
 L’hockey su ghiaccio
-Hoki
+Hoki (betonon)
 L’hockey su prato
 Egyedül elérni az eredményeket
 Raggiungere i risultati da solo
