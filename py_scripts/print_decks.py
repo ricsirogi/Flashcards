@@ -6,8 +6,8 @@ also it can automatically write the decks to allDecks.json
 """
 
 import glob
-import os
 import json
+import os
 
 decks_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "decks")
 

@@ -118,10 +118,6 @@ Műemlék
 Il monumento
 Meglátogat, megtekint
 Visitare
-Műemlék
-Il monumento
-Meglátogat, megtekint
-Visitare
 Szabadtéri
 All’aperto
 Dóm
