@@ -105,7 +105,7 @@ la fotocopiatrice
 írógép
 la macchina da scrivere
 távirányító
-telecomando
+il telecomando
 zsebszámológép
 la calcolatrice tascabile (f)
 okostelefon (2)
@@ -137,7 +137,7 @@ Scorrere, andare
 GPS navigáció
 La navigazione GPS (f)
 Parkolási segéd/parkolóradar
-Sensori di parcheggio
+i sensori di parcheggio
 Vezető nélküli autó
 L’automobile senza conducente
 Robotbőrönd
