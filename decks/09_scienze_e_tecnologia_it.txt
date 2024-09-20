@@ -1,0 +1,280 @@
+természettudomány
+le scienze naturali
+társadalomtudomány
+le scienze sociali
+régészet
+l’archeologia
+asztronómia, csillagászat
+l’astronomia
+génsebészet
+L’ingegneria genetica
+információs technológia
+l’informatica
+jogtudomány (2)
+la giurisprudenza, la legge
+nyelvészet
+la linguistica
+orvostudomány
+la biologia molecolare
+atomtechnológia
+l’ingegneria nucleare
+űrkutatás (2)
+le ricerche cosmiche/spaziali
+állattan
+la zoologia
+tanulmányoz valamit
+studiare qualcosa
+kutatást végez
+condurre ricerche
+kísérleteket hajt végre (3)
+fare/eseguire/condurre esperimenti
+mikroszkóp
+il microscopio
+szabály
+la regola, la norma
+logika
+la logica
+megelőzi az öröklődő/halálos betegségeket (3)
+prevenire malattie ereditarie/genetiche/letali
+fejleszti a telekommunikációt
+sviluppare la telecomunicazione
+javítja vmi biztonságát (2)
+migliorare/sviluppare la sicurezza di qualcosa
+atomenergiát termel
+produrre dell’energia nucleare
+segít betegségeket gyógyítani
+aiutare a guarire malattie
+élet az űrben
+la vita nello spazio
+extrém időjárási körülmények között
+in circostanze atmosferiche estreme
+tudományos magazin/cikk (3)
+la rivista/l’articolo/il saggio scientifica/o
+Világháló (2)
+World wide web, rete mondiale
+Gazdaság
+L’economia
+Ipar
+L’industria
+Üzlet
+Il commercio, gli affari
+Műhold
+Il satellite
+Kábel
+Il cavo/filo (2)
+Hordozható
+Portatile/portabile
+Hálózati kapcsolatban (2)
+Online/in linea
+Honlap (3)
+L’homepage, la pagina principale/iniziale
+Weblap (3)
+La pagina web/internet, il sito internet
+Vmin keresztül (3)
+Tramite/via/attraverso per mezzo di
+Internetes kereskedelem
+Il commercio elettronico
+internetes bank
+la telebanca, la banca online/internet/a domicilio
+chatel
+chattare
+chat-szoba/beszélgető szoba
+il chatroom, il canale
+számítógépes játékokat játszik
+giocare con videogiochi
+e-mailt ír/küld/kap
+scrivere/inviare/ricevere un’e-mail
+szerver/szolgáltató
+il server
+hozzáférés
+l’accesso
+letölt/feltölt
+scaricare/caricare
+kütyü
+l’aggeggio/l’arnese/il gadget
+üzenetrögzítő
+la segreteria telefonica
+fax
+il fax
+fénymásoló
+la fotocopiatrice
+írógép
+la macchina da scrivere
+távirányító
+telecomando
+zsebszámológép
+calcolatrice tascabile
+okostelefon (2)
+telefono/cellulare intelligente
+okos tv/-hűtő
+TV/frigorifero intelligente
+3D-s nyomtató
+La stampante 3D
+Interaktív TV
+La televisione interattiva (f)
+Érintőképernyő (3)
+Lo schermo sensibile/tattile, touch screen
+Virtuális billentyűzet
+La tastiera virtuale
+Magas felbontás, HD (2)
+HD, alta definizione (f)
+Képernyőforgatás
+La rotazione dello schermo (f)
+Alkalmazás
+L’applicazione (f)
+Nagyítás, kicsinyítés az ujjbegy szét- és összehúzásával (maga a funkció neve)
+Pinch to zoom
+Nagyítani
+Allegrare
+Kicsinyíteni
+Rimpicciolire
+Gördít (2)
+Scorrere, andare
+GPS navigáció
+La navigazione GPS (f)
+Parkolási segéd/parkolóradar
+Sensori di parcheggio
+Vezető nélküli autó
+L’automobile senza conducente
+Robotbőrönd
+La valigia robot
+Intelligens sütő
+Il forno intelligente
+Használati útmutató (3)
+Il manuale, il libretto d’istruzioni, la guida
+Garancia
+La garanzia
+Kinyomtat
+Stampare
+Bedugja a csatlakozót
+Attaccare alla corrente
+Bekapcsol
+Accendere
+Kikapcsol
+Spegnere
+Belép (2)
+Accedere, fare il login
+Kulcsszó (2)
+Il criterio di ricerca/la parola chiave
+Jelszó
+La password (f)
+Megnyom egy gombot
+Premere un tasto
+Hardver
+Hardware
+Szoftver (2)
+Software, il programma applicativo
+Képernyő (2)
+Lo schermo, il monitor
+Billentyűzet
+La tastiera
+Egér
+Il mouse
+Gépel
+Scrivere al computer
+Szerkeszt (2)
+Modificare, correggere
+Visszavon
+Annullare
+Töröl (2)
+Cancellare, eliminare
+Másol
+Copiare
+Beilleszt
+Incollare
+Kivág
+Tagliare
+Ment
+Salvare
+Zárt rendszerű
+A circuito chiuso
+Adatbázis (2)
+Il database, la banca dati
+Információval való visszaélés
+Abusare delle informazioni
+Ikon
+La icona
+(webes) link (2)
+Il link, il collegamento
+Egy ikonra/linkre kattint (2)
+Cliccare/fare clic sull’icona/sul link
+Hagyományos posta
+La posta ordinaria
+Szövegszerkesztő (2)
+Programma di videoscrittura, elaboratore di testi
+Kapcsolódik az internethez
+Collegarsi a internet
+Hálózat
+La rete
+Dokumentum
+Il documento
+Keresőprogram
+Il motore di ricerca
+Keresgél/szörföl az interneten
+Cercare/navigare su internet
+Kurzor
+Il cursore
+Memória
+Memoria
+Cyberbűnöző
+Criminale informatico
+Hacker
+L’hacker/il pirata informatico
+Virtuális valóság
+Realtà virtuale
+Vírus
+Il virus
+Megtámad
+Attaccare
+Spam, levélszemét
+Lo spam
+Adatokat tárol (5)
+Archiviare/memorizzare/conservare le informazioni/i dati
+Meghajtó (2)
+Il lettore/il drive
+Visszateker
+Riavvolgere
+Felvételt készít
+Registrare
+Lejátszik (2)
+Riprodurre, suonare
+Megállít (2)
+Mettere in pausa, arrestare
+Beállít (4)
+Impostare, regolare, posizionare, sistemare
+Weboldalt készít
+Costruire un sito internet
+Tápegység
+L’alimentatore (m), l’alimentazione elettrica (f)
+Csúcstechnológia (3)
+La tecnologia avanzata/sofisticata/alta
+Legfejlettebb (3)
+All’avanguardia, allo stato dell’arte, il più moderno
+Hangerő
+Il volume
+Keverő/hangoló
+Il sintonizzatore
+Számláló
+Il contatore
+Felfedez
+Scoprire
+Felfedezés
+La scoperta
+feltalál (3)
+inventare, ideare, concepire
+találmány
+la invenzione (f)
+nyomtatás
+la stampa
+gőzmozdony
+il motore a vapore
+villanykörte
+la lampadina
+távíró
+il telegrafo
+elem (2)
+la pila, la batteria
+automata
+automatico
+vezeték nélküli (2)
+wireless, senza fili

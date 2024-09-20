@@ -51,6 +51,9 @@ var listOfDecs = [ //! add new decks to decks/allDecks.json as well!!! (use prin
     'abitazione_it',
     'gli_aquisti_e_i_servizi_10ig_it',
   ],
+  ['tóth zita szavak',
+    '09_scienze_e_technologia_it'
+  ],
   ['tételek',
     'lo_sport_it',
     'citta_o_campagna_it',
