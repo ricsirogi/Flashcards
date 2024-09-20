@@ -15,6 +15,8 @@ la giurisprudenza, la legge
 nyelvészet
 la linguistica
 orvostudomány
+la medicina
+molekuláris biológia
 la biologia molecolare
 atomtechnológia
 l’ingegneria nucleare
@@ -30,7 +32,7 @@ kísérleteket hajt végre (3)
 fare/eseguire/condurre esperimenti
 mikroszkóp
 il microscopio
-szabály
+szabály (2)
 la regola, la norma
 logika
 la logica
@@ -51,18 +53,18 @@ in circostanze atmosferiche estreme
 tudományos magazin/cikk (3)
 la rivista/l’articolo/il saggio scientifica/o
 Világháló (2)
-World wide web, rete mondiale
+il world wide web, la rete mondiale
 Gazdaság
 L’economia
 Ipar
 L’industria
-Üzlet
+Üzlet (2)
 Il commercio, gli affari
 Műhold
 Il satellite
 Kábel
-Il cavo/filo (2)
-Hordozható
+Il cavo/ il filo (2)
+Hordozható (2)
 Portatile/portabile
 Hálózati kapcsolatban (2)
 Online/in linea
@@ -74,11 +76,11 @@ Vmin keresztül (3)
 Tramite/via/attraverso per mezzo di
 Internetes kereskedelem
 Il commercio elettronico
-internetes bank
+internetes bank (4)
 la telebanca, la banca online/internet/a domicilio
 chatel
 chattare
-chat-szoba/beszélgető szoba
+chat-szoba/beszélgető szoba (2)
 il chatroom, il canale
 számítógépes játékokat játszik
 giocare con videogiochi
@@ -88,9 +90,11 @@ szerver/szolgáltató
 il server
 hozzáférés
 l’accesso
-letölt/feltölt
-scaricare/caricare
-kütyü
+letölt
+scaricare
+feltölt
+caricare
+kütyü (3)
 l’aggeggio/l’arnese/il gadget
 üzenetrögzítő
 la segreteria telefonica
@@ -103,7 +107,7 @@ la macchina da scrivere
 távirányító
 telecomando
 zsebszámológép
-calcolatrice tascabile
+la calcolatrice tascabile (f)
 okostelefon (2)
 telefono/cellulare intelligente
 okos tv/-hűtő
@@ -125,7 +129,7 @@ L’applicazione (f)
 Nagyítás, kicsinyítés az ujjbegy szét- és összehúzásával (maga a funkció neve)
 Pinch to zoom
 Nagyítani
-Allegrare
+allargare
 Kicsinyíteni
 Rimpicciolire
 Gördít (2)
