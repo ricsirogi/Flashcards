@@ -21,7 +21,7 @@ la biologia molecolare
 atomtechnológia
 l’ingegneria nucleare
 űrkutatás (2)
-le ricerche cosmiche/spaziali
+le ricerche cosmiche / spaziali
 állattan
 la zoologia
 tanulmányoz valamit
@@ -29,19 +29,19 @@ studiare qualcosa
 kutatást végez
 condurre ricerche
 kísérleteket hajt végre (3)
-fare/eseguire/condurre esperimenti
+fare / eseguire / condurre esperimenti
 mikroszkóp
 il microscopio
 szabály (2)
 la regola, la norma
 logika
 la logica
-megelőzi az öröklődő/halálos betegségeket (3)
-prevenire malattie ereditarie/genetiche/letali
+megelőzi az öröklődő / halálos betegségeket (3)
+prevenire malattie ereditarie / genetiche / letali
 fejleszti a telekommunikációt
 sviluppare la telecomunicazione
 javítja vmi biztonságát (2)
-migliorare/sviluppare la sicurezza di qualcosa
+migliorare / sviluppare la sicurezza di qualcosa
 atomenergiát termel
 produrre dell’energia nucleare
 segít betegségeket gyógyítani
@@ -50,8 +50,8 @@ aiutare a guarire malattie
 la vita nello spazio
 extrém időjárási körülmények között
 in circostanze atmosferiche estreme
-tudományos magazin/cikk (3)
-la rivista/l’articolo/il saggio scientifica/o
+tudományos magazin / cikk (3)
+la rivista / l’articolo / il saggio scientifica / o
 Világháló (2)
 il world wide web, la rete mondiale
 Gazdaság
@@ -62,31 +62,31 @@ L’industria
 Il commercio, gli affari
 Műhold
 Il satellite
-Kábel
-Il cavo/ il filo (2)
+Kábel (2)
+Il cavo /  il filo
 Hordozható (2)
-Portatile/portabile
+Portatile / portabile
 Hálózati kapcsolatban (2)
-Online/in linea
+Online / in linea
 Honlap (3)
-L’homepage, la pagina principale/iniziale
+L’homepage, la pagina principale / iniziale
 Weblap (3)
-La pagina web/internet, il sito internet
+La pagina web / internet, il sito internet
 Vmin keresztül (3)
-Tramite/via/attraverso per mezzo di
+Tramite / via / attraverso per mezzo di
 Internetes kereskedelem
 Il commercio elettronico
 internetes bank (4)
-la telebanca, la banca online/internet/a domicilio
+la telebanca, la banca online / internet / a domicilio
 chatel
 chattare
-chat-szoba/beszélgető szoba (2)
+chat-szoba / beszélgető szoba (2)
 il chatroom, il canale
 számítógépes játékokat játszik
 giocare con videogiochi
-e-mailt ír/küld/kap
-scrivere/inviare/ricevere un’e-mail
-szerver/szolgáltató
+e-mailt ír / küld / kap
+scrivere / inviare / ricevere un’e-mail
+szerver / szolgáltató
 il server
 hozzáférés
 l’accesso
@@ -95,7 +95,7 @@ scaricare
 feltölt
 caricare
 kütyü (3)
-l’aggeggio/l’arnese/il gadget
+l’aggeggio / l’arnese / il gadget
 üzenetrögzítő
 la segreteria telefonica
 fax
@@ -109,15 +109,15 @@ il telecomando
 zsebszámológép
 la calcolatrice tascabile (f)
 okostelefon (2)
-telefono/cellulare intelligente
-okos tv/-hűtő
-TV/frigorifero intelligente
+telefono / cellulare intelligente
+okos tv / -hűtő
+TV / frigorifero intelligente
 3D-s nyomtató
 La stampante 3D
 Interaktív TV
 La televisione interattiva (f)
 Érintőképernyő (3)
-Lo schermo sensibile/tattile, touch screen
+Lo schermo sensibile / tattile, touch screen
 Virtuális billentyűzet
 La tastiera virtuale
 Magas felbontás, HD (2)
@@ -136,7 +136,7 @@ Gördít (2)
 Scorrere, andare
 GPS navigáció
 La navigazione GPS (f)
-Parkolási segéd/parkolóradar
+Parkolási segéd / parkolóradar
 i sensori di parcheggio
 Vezető nélküli autó
 L’automobile senza conducente
@@ -159,15 +159,15 @@ Spegnere
 Belép (2)
 Accedere, fare il login
 Kulcsszó (2)
-Il criterio di ricerca/la parola chiave
+Il criterio di ricerca / la parola chiave
 Jelszó
 La password (f)
 Megnyom egy gombot
 Premere un tasto
 Hardver
-Hardware
+l'hardware (m)
 Szoftver (2)
-Software, il programma applicativo
+il software, il programma applicativo
 Képernyő (2)
 Lo schermo, il monitor
 Billentyűzet
@@ -197,15 +197,15 @@ Il database, la banca dati
 Információval való visszaélés
 Abusare delle informazioni
 Ikon
-La icona
+l'icona
 (webes) link (2)
 Il link, il collegamento
-Egy ikonra/linkre kattint (2)
-Cliccare/fare clic sull’icona/sul link
+Egy ikonra / linkre kattint (2)
+Cliccare / fare clic sull’icona / sul link
 Hagyományos posta
 La posta ordinaria
 Szövegszerkesztő (2)
-Programma di videoscrittura, elaboratore di testi
+il programma di videoscrittura, l'elaboratore di testi (m?)
 Kapcsolódik az internethez
 Collegarsi a internet
 Hálózat
@@ -214,18 +214,18 @@ Dokumentum
 Il documento
 Keresőprogram
 Il motore di ricerca
-Keresgél/szörföl az interneten
-Cercare/navigare su internet
+Keresgél / szörföl az interneten
+Cercare / navigare su internet
 Kurzor
 Il cursore
 Memória
-Memoria
+la memoria
 Cyberbűnöző
-Criminale informatico
-Hacker
-L’hacker/il pirata informatico
+il criminale informatico (m)
+Hacker (2)
+L’hacker / il pirata informatico
 Virtuális valóság
-Realtà virtuale
+la realtà virtuale
 Vírus
 Il virus
 Megtámad
@@ -233,9 +233,9 @@ Attaccare
 Spam, levélszemét
 Lo spam
 Adatokat tárol (5)
-Archiviare/memorizzare/conservare le informazioni/i dati
+Archiviare / memorizzare / conservare le informazioni / i dati
 Meghajtó (2)
-Il lettore/il drive
+Il lettore / il drive
 Visszateker
 Riavvolgere
 Felvételt készít
@@ -248,15 +248,15 @@ Beállít (4)
 Impostare, regolare, posizionare, sistemare
 Weboldalt készít
 Costruire un sito internet
-Tápegység
+Tápegység (2)
 L’alimentatore (m), l’alimentazione elettrica (f)
 Csúcstechnológia (3)
-La tecnologia avanzata/sofisticata/alta
+La tecnologia avanzata / sofisticata / alta
 Legfejlettebb (3)
 All’avanguardia, allo stato dell’arte, il più moderno
 Hangerő
 Il volume
-Keverő/hangoló
+Keverő / hangoló
 Il sintonizzatore
 Számláló
 Il contatore
