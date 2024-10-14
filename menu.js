@@ -55,6 +55,7 @@ var listOfDecs = [ //! add new decks to decks/allDecks.json as well!!! (use prin
     '09_scienze_e_tecnologia_it'
   ],
   ['tételek',
+    'tutela_dell_ambiente_it',
     'lo_sport_it',
     'citta_o_campagna_it',
     'tv_multimedia_it',
@@ -69,6 +70,7 @@ var listOfDecs = [ //! add new decks to decks/allDecks.json as well!!! (use prin
     'rendhagyo_passato_prossimo_it',
     'rendhagyo_imperfetto_HAMAROSAN_it'],
   ['olasz témakörök',
+    'frasi_utili_it',
     'lo_sport_it',
     'soldi_e_lavoro_mini_it',
     'professioni_mestieri_it',
